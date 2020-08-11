@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Lumni</title>
+    <link rel="stylesheet" href="css/princ.css">
+    <link rel="stylesheet" href="icons/style.css" />
+    <link rel="stylesheet" href="css/mob-menu.css">
+    <link rel="stylesheet" href="css/vertical-menu.css">
+    <link rel="stylesheet" href="css/fs-busca.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/zoom-img.css">
+    <link rel="icon" href="img/icon4.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo.png" id="logo" alt="">
+        <ul>
+            <li class="nav-link"><a href="index.html">INÍCIO</a></li>
+            <li class="nav-link"><a href="forum.html">FÓRUM</a></li>
+            <li class="nav-link"><a href="loja.html">LOJA</a></li>
+            <li class="nav-link"><a href="eventos.html">EVENTOS</a></li>
+            <li class="nav-link"><a href="relatos.html">RELATOS</a></li>
+            <li class="nav-link"><a href="sobre.html">SOBRE NÓS</a></li>
+            <li class="secundary-menu">
+                <form class="openBtn" action="" onclick="openSearch()">
+                    <input type="text" placeholder="O que você procura..." name="busca">
+                    <button type="submit"><i class="icon-B" id="lupa"></i></button>
+                </form>
+            </li>
+            <li class="secundary-menu"><button><i class="icon-I sub-menu"></i></button></li>
+            <li id="loja" class="secundary-menu"><button><i class="icon-M sub-menu"><sup>0</sup></i></li>
+            <li id="user" class="secundary-menu"><button><i class="icon-U sub-menu"></i>
+                    <legend>Entre ou<br> Cadastre-se</legend>
+                </button>
+
+            </li>
+        </ul>
+        <input type="checkbox" id="hub-menu">
+        <label for="hub-menu" onclick="openNav()">&#9776;</label>
+    </nav>
+    <!-- Menu Mobile -->
+    <div id="mob-menu" class="container-mob-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="list-menus">
+          <a href="index.html">INÍCIO</a>
+          <a href="forum.html">FÓRUM</a>
+          <a href="loja.html">LOJA</a>
+          <a href="eventos.html">EVENTOS</a>
+          <a href="relatos.html">RELATOS</a>
+          <a href="sobre.html">SOBRE NÓS</a>
+        </div>
+      </div>
+    <!-- Menu Mobile de Busca Tela Cheia -->
+    <div id="fullscreen-search" class="container-src">
+        <span class="closebtn" onclick="closeSearch();" title="Close Overlay">×</span>
+        <div class="container-src-full">
+            <form action="">
+                <input type="text" placeholder="O que você procura?" name="search">
+                <button type="submit"><i class="icon-B"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- Vertical Menu-->
+    <div id="vertical-menu" class="sidenav">
+        <a href="#s8" id="sec8">COMPOSIÇÃO DA MARCA</a>
+        <a href="#s9" id="sec9">VARIAÇÕES DA MARCA</a>
+        <a href="#s10" id="sec10">GRID CONSTRUTIVO</a>
+        <a href="#s11" id="sec11">AREA DE PROTEÇÃO</a>
+        <a href="#s12" id="sec12">TAMANHO MÍNIMO</a>
+        <a href="#s13" id="sec13">TIPOGRAFIA</a>
+        <a href="#s14" id="sec14">HARMONIA CROMÁTICA</a>
+        <a href="#s15" id="sec15">MANUAL COMPLETO</a>
+    </div>
+    <main>
+        <section class="s7" id="s7">
+            <h2>Manual de Marca</h2>
+        </section>
+        <section class="s8" id="s8">
+            <h2>Composição da Marca</h2>
+            <img src="img/draw-marca.png" alt="">
+            <p>Analisando o símbolo que constitui a Marca é possível visualizar uma nave espacial com formato
+                arredondado, emitindo uma luz, representação inspirada em diversos relatos ufológicos sobre
+                abdução, assunto bastante comentado pela comunidade ufológica.</p><br><br>
+            <p>O logotipo da Marca possui muita influência de séries, filmes e documentários sobre a temática
+                ufológica. A palavra “lumni” representa muito bem os valores do projeto: mistério e seriedade
+                são equilibrados em um logotipo que desperta o imaginário popular.</p><br><br>
+            <p>A tipografia com formas arredondadas externamente e quadradas internamente representa, de maneira
+                discreta, o próprio símbolo da Marca, a fim de criar uma harmonia entre eles.</p>
+        </section>
+        <section class="s9" id="s9">
+            <h2>Variações da Marca</h2>
+            <p>A marca pode ser aplicada em cinco formas diferentes: vertical, horizontal, horizontal com
+                conceito, símbolo isolado e logotipo isolado. O formato vertical, poderá ser usado em redes
+                sociais e aplicações físicas, como os artigos à venda da plataforma digital. O formato
+                horizontal pode ser usado em aplicações digitais, como no topo e rodapé do Website. Geralmente
+                em lugares que não dispõem de muito espaço vertical. O formato horizontal com conceito só deve
+                ser usado em aplicações digitais de tamanho grande e legível, quando não for possível usar o
+                formato horizontal.
+                Preferencialmente a marca deve ser usada em seu degradê e formato vertical ou horizontal
+                originais.</p>
+            </div>
+            <div class="box">
+                <div>
+                    <ul class="content-box">
+                        <li><img src="img/var-marca/5.png" style="width: 40%; margin:0 30% " id="tela-1" alt="">
+                            <div class="buttons">
+                                <input type="button" value="" style="background-color: black;" onclick="img01();">
+                                <input type="button" value="" style="background-color: rgb(63, 22, 91);"
+                                    onclick="img02();">
+                                <input type="button" value="" style="background-color: white;" onclick="img03();">
+                                <input type="button" value=""
+                                    style="background-image: linear-gradient(to right, rgb(116,27,103),rgb(113,32,115),rgb(63, 22, 91),rgb(16,18,64),rgb(1,1,1));"
+                                    onclick="img04();">
+                            </div>
+                        </li>
+
+                        <li><img src="img/var-marca/1.png" style="width: 100%;" id="tela-2" alt="">
+                            <div class="buttons">
+                                <input type="button" value="" style="background-color: black;" onclick="img05();">
+                                <input type="button" value="" style="background-color: rgb(63, 22, 91);"
+                                    onclick="img06();">
+                                <input type="button" value="" style="background-color: white;" onclick="img07();">
+                                <input type="button" value=""
+                                    style="background-image: linear-gradient(to right, rgb(116,27,103),rgb(113,32,115),rgb(63, 22, 91),rgb(16,18,64),rgb(1,1,1));"
+                                    onclick="img08();">
+                            </div>
+                        </li>
+
+                        <li><img src="img/var-marca/10.png" style="width: 35%; margin:0 32%" id="tela-3" alt="">
+                            <div class="buttons">
+                                <input type="button" value="" style="background-color: black;" onclick="img09();">
+                                <input type="button" value="" style="background-color: rgb(63, 22, 91);"
+                                    onclick="img10();">
+                                <input type="button" value="" style="background-color: white;" onclick="img11();">
+                                <input type="button" value=""
+                                    style="background-image: linear-gradient(to right, rgb(116,27,103),rgb(113,32,115),rgb(63, 22, 91),rgb(16,18,64),rgb(1,1,1));"
+                                    onclick="img12();">
+                            </div>
+                        </li>
+
+                        <li><img src="img/var-marca/19.png" style="width: 100%;" id="tela-4" alt="">
+                            <div class="buttons">
+                                <input type="button" value="" style="background-color: black;" onclick="img13();">
+                                <input type="button" value="" style="background-color: rgb(63, 22, 91);"
+                                    onclick="img14();">
+                                <input type="button" value="" style="background-color: white;" onclick="img15();">
+                                <input type="button" value=""
+                                    style="background-image: linear-gradient(to right, rgb(116,27,103),rgb(113,32,115),rgb(63, 22, 91),rgb(16,18,64),rgb(1,1,1));"
+                                    onclick="img16();">
+                            </div>
+                        </li>
+                        <li id="ult"><img src="img/var-marca/16.png" style="width: 100%;" id="tela-5" alt="">
+                            <div class="buttons">
+                                <input type="button" value="" style="background-color: black;" onclick="img17();">
+                                <input type="button" value="" style="background-color: rgb(63, 22, 91);"
+                                    onclick="img18();">
+                                <input type="button" value="" style="background-color: white;" onclick="img19();">
+                                <input type="button" value=""
+                                    style="background-image: linear-gradient(to right, rgb(116,27,103),rgb(113,32,115),rgb(63, 22, 91),rgb(16,18,64),rgb(1,1,1));"
+                                    onclick="img20();">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="s10" id="s10">
+            <h2>Grid Construtivo</h2>
+            <div class="img-magnifier-container no-mob">
+            <img src="img/grid04.png" style="width: 100%;" alt="" class="no-mob" id="zoom-img1">
+            </div>
+            <div class="view-mob">
+                <div class="img-magnifier-container">
+                <img src="img/grid1.png" alt="" id="zoom-img2">
+                </div>
+                <div class="img-magnifier-container">
+                <img src="img/grid2.png" alt="" id="zoom-img3">
+                </div>
+                <div class="img-magnifier-container">
+                <img src="img/grid3.png" alt="" id="zoom-img4">
+                </div>
+            </div>
+        </section>
+        <section class="s11" id="s11">
+            <h2>Área de Proteção</h2>
+            <p>Para garantir a proteção da marca contra interferências, não deve haver qualquer tipo de elementos
+                gráficos, imagens ou textos, na área de proteção.</p>
+            <div class="img-magnifier-container">
+            <img src="img/zona-protect.png" style="width: 100%;" alt="" id="zoom-img5">
+            </div>
+        </section>
+        <section class="s12" id="s12">
+            <h2>Tamanho Mínimo</h2>
+            <p>Afim de manter a legibilidade em escalas reduzidas, é estabelecido que a marca pode ser redimensionada
+                minimamente na seguinte proporção:</p>
+            <img src="img/tam-min.png"  alt="">
+        </section>
+        <section class="s13" id="s13">
+            <h2>Tipografia</h2>
+            <p>As variações tipográficas escolhidas são derivadas de uma família de fontes chamada Frutiger, que possuem uma ótima leiturabilidade e possuem um traço retilíneo que conversão bem com a marca. Diante disso, fica estabelecido a fonte Frutiger 65 Bold para títulos e a Frutiger 45 Light para texto descritivo.</p>
+            <div class="tipo">
+            <img src="img/tiphog-w.png" width="55%" alt="" class="no-mob">
+            <img src="img/tiphog-mobw.png" width="100%" alt="" class="view-mob">
+            </div>
+        </section>
+        <section class="s14" id="s14">
+            <h2>Harmonia Cromática</h2>
+            <p>A paleta de cores escolhida representa a galáxia, os tons de violeta chamam a atenção do espectador para
+                o mistério. Utilizamos a harmonia cromática de cores análogas para fazer uso de degradê na logomarca.
+            </p>
+            <div id="box">
+                <ul>
+                    <li>
+                        <div class="cor" style="background-color: rgb(116,27,103);"></div>
+                        <div class="conteudo">
+                            <p class="n-section">R:116 G:27 B:103</p>
+                            <p class="n-section">C:0 M:84 Y:38 K:35</p>
+                            <p class="n-section">HEXADECIMAL:<br>#A61B67</p>
+                            <p class="n-section">PANTONE:<br>P 81-8 C</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cor" style="background-color: rgb(113,32,115);"></div>
+                        <div class="conteudo">
+                            <p class="n-section">R:113 G:32 B:115</p>
+                            <p class="n-section">C:2 M:72 Y:0 K:55</p>
+                            <p class="n-section">HEXADECIMAL:<br>#712073</p>
+                            <p class="n-section">PANTONE:<br>259 C</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cor" style="background-color:rgb(63, 22, 91);"></div>
+                        <div class="conteudo">
+                            <p class="n-section">R:63 G:22 B:91</p>
+                            <p class="n-section">C:31 M:76 Y:0 K:64</p>
+                            <p class="n-section">HEXADECIMAL:<br>#3F165B</p>
+                            <p class="n-section">PANTONE:<br>2627 CP</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cor" style="background-color: rgb(16,18,64)"></div>
+                        <div class="conteudo">
+                            <p class="n-section">R:16 G:18 B:64</p>
+                            <p class="n-section">C:75 M:72 Y:0 K:75</p>
+                            <p class="n-section">HEXADECIMAL:<br>#101240</p>
+                            <p class="n-section">PANTONE:<br>2766 C</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cor" style="background-color: rgb(1,1,1);"></div>
+                        <div class="conteudo">
+                            <p class="n-section">R:1 G:1 B:1</p>
+                            <p class="n-section">C:255 M:255 Y:255 K:255</p>
+                            <p class="n-section">HEXADECIMAL:<br>#000000</p>
+                            <p class="n-section">PANTONE:<br>20-0200 TPM</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <section class="s15" id="s15">
+            <h2>Ficou curioso sobre mais detalhes da marca Lumni?</h2>
+            <p>Pois bem, caso queira saber mais, segue logo abaixo a Versão Completa. As informações contidas nesse
+                documento possuem direitos reservados pelo Portal Lumni, qualquer uso indevido, é de responsabilidade do
+                utilizador. Faça seu download gratuito e utilize com responsabilidade!</p>
+            <div class="dw-buttons">
+            <a href="downloads/Manual de Marca.pdf" target="_blank" download><button style="font-size:15pt" id="cp">Manual Completo PDF <i class="fa fa-download"></i></button></a>
+            <a href="downloads/Manual Formato Impressão.pdf" target="_blank" download><button style="font-size:15pt;"id="ip">Manual Formato Impressão PDF <i class="fa fa-download"></i></button></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul id="princ">
+
+            <li>
+                <ul class="contato">
+                    <li>
+                        <p><span><a href="contato.html">FALE CONOSCO</a></span></p>
+                    </li>
+                    <li>
+                        <p><span><a href="marca.html">MANUAL DE MARCA</a></span></p>
+                    </li>
+                    <li>
+                        <p><span><a href="downloads.html">DOWNLOADS</span></a></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p id="copy">&copy; 2019 By Portal Lumni, Todos os direitos reservados</p>
+            </li>
+            <li>
+                <ul class="social">
+                    <p>Siga nossas redes sociais:</p>
+                    <li><a href="https://www.facebook.com/Lumni-Quixad%C3%A1-100732148033586/?modal=admin_todo_tour"
+                            target="_blank" class="fa fa-facebook-official" style="font-size: 25px"></a></li>
+                    <li><a href="https://www.instagram.com/lumniqoficial/" target="_blank" class="fa fa-instagram"
+                            style="font-size: 25px"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCUl6dEKOFaK24zm76G0HDrw?view_as=subscriber"
+                            target="_blank" class="fa fa-youtube-play" style="font-size: 25px"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/zoom-img.js"></script>
+    <script src="js/fullscreen-search.js"></script>
+    <script src="js/mudaimg.js"></script>
+    <script src="js/mob-menu.js"></script>
+</body>
+
+</html>

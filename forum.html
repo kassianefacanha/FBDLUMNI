@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Lumni</title>
+    <link rel="stylesheet" href="css/princ.css">
+    <link rel="stylesheet" href="icons/style.css" />
+    <link rel="stylesheet" href="css/mob-menu.css">
+    <link rel="stylesheet" href="css/vertical-menu.css">
+    <link rel="stylesheet" href="css/forum.css">
+    <link rel="stylesheet" href="css/fs-busca.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icon4.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo.png" id="logo" alt="">
+        <ul>
+            <li class="nav-link"><a href="index.html">INÍCIO</a></li>
+            <li class="nav-link"><a href="">FÓRUM</a></li>
+            <li class="nav-link"><a href="loja.html">LOJA</a></li>
+            <li class="nav-link"><a href="eventos.html">EVENTOS</a></li>
+            <li class="nav-link"><a href="relatos.html">RELATOS</a></li>
+            <li class="nav-link"><a href="sobre.html">SOBRE NÓS</a></li>
+            <li class="secundary-menu">
+                <form class="openBtn" action="" onclick="openSearch();">
+                    <input type="text" placeholder="Buscar no Fórum..." name="busca">
+                    <button type="submit"><i class="icon-B" id="lupa"></i></button>
+                </form>
+            </li>
+            <li class="secundary-menu"><button><i class="icon-I sub-menu"></i></button></li>
+            <li id="loja" class="secundary-menu"><button><i class="icon-M sub-menu"><sup>0</sup></i></li>
+
+            <div class="dropdown">
+                <li class="secundary-menu" id="forum-user"><button class="dropbtn" onclick="DropUser();"><img
+                            src="img/perfil-forum.jpg" alt="">
+                        <legend>José33</legend><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button></li>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>Criar Postagem</a>
+                    <a href="#"><i class="fa fa-heart" aria-hidden="true"></i>Favoritos</a>
+                    <a href="#"><i i class="icon-E"></i>Sair</a>
+                </div>
+        </ul>
+        <input type="checkbox" id="hub-menu">
+        <label for="hub-menu" onclick="openNav()">&#9776;</label>
+    </nav>
+    <!-- Menu Mobile -->
+    <div id="mob-menu" class="container-mob-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="list-menus">
+            <a href="index.html">INÍCIO</a>
+            <a href="forum.html">FÓRUM</a>
+            <a href="loja.html">LOJA</a>
+            <a href="eventos.html">EVENTOS</a>
+            <a href="relatos.html">RELATOS</a>
+            <a href="sobre.html">SOBRE NÓS</a>
+        </div>
+    </div>
+    <!-- Menu Mobile de Busca Tela Cheia -->
+    <div id="fullscreen-search" class="container-src">
+        <span class="closebtn" onclick="closeSearch();">×</span>
+        <div class="container-src-full">
+            <form action="">
+                <input type="text" placeholder="Buscar no Fórum..." name="search">
+                <button type="submit"><i class="icon-B"></i></button>
+            </form>
+        </div>
+    </div>
+    <main>
+        <section class="presentation-forum">
+            <h2>FÓRUM LUMNI</h2>
+            <p>Troca de experiências e conhecimentos ufológicos</p>
+        </section>
+        <section class="ofc-forum">
+            <div class="aside-forum">
+                <div>
+                    <h2>Tópicos</h2>
+                    <a href="">Abdução</a>
+                    <a href="">Astronomia</a>
+                    <a href="">Ocultismo</a>
+                    <a href="">Teorias da Conspiração</a>
+                    <a href="">Paranormalidade</a>
+                    <a href="">Antigas Civilizações</a>
+                    <a href="">Telescinese</a>
+                    <a href="">Projeções Astrais</a>
+                    <a href="">Área 51</a>
+                    <br>
+                    <h3><a href="">Assuntos Recentes</a></h3>
+                    <h3><a href="">Mais Vistos</a></h3>
+                </div>
+                <div>
+                    <h2>TAGS MAIS <br>USADAS</h2>
+                    <a href="">Acobertamento</a>
+                    <a href="">Paralisia do Sono</a>
+                    <a href="">Palestra Ufológica</a>
+                    <a href="">Nova Ordem Mundial</a>
+                </div>
+            </div>
+            <div class="main-forum">
+                <ul>
+                    <li class="post-user">
+                        <div class="perfil-user"><img src="img/forum/perfil-forum1.jpg" alt="">
+                            <h4>André123</h4>
+                            <p id="on"><i class="fa fa-circle" aria-hidden="true"></i>Online</p>
+                        </div>
+                        <div class="conteudo-post">
+                            <h2>Surpreendente Palestra Ufológica na <br>Paranapiacaba</h2>
+                            <legend>Palestra Ufológica<i class="fa fa-video-camera" aria-hidden="true"
+                                    class="icon-indicator" style="font-size: 1em;"></i></legend>
+                            <label>Postado a 12 min</label></i><br>
+                            <p>Em 08 de Agosto de 2015 ocorreu o 1º Debate Ufológico de Paranapiacaba, dentro da III
+                                SteamCon, o maior evento de SteamPunk do Brasil. Como esse era o primeiro evento de
+                                ufologia organizado por nós, pensei: Poxa, vejo sempre nos eventos por ai as pessoas
+                                falando de ...<strong id="postvideo">Ver mais</strong></p>
+                            <div class="opc-post">
+                                <p><i class="fa fa-heart" aria-hidden="true"></i>20</p>
+                                <p><i class="fa fa-comments-o" aria-hidden="true"></i>6</p>
+                                <p><i class="fa fa-share" aria-hidden="true"></i>2</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-user">
+                        <div class="perfil-user"><img src="img/forum/perfil-forum2.jpg" alt="">
+                            <h4>Sâmia007</h4>
+                            <p id="off"><i class="fa fa-circle" aria-hidden="true"></i>Offline</p>
+                        </div>
+                        <div class="conteudo-post">
+                            <h2>Os efeitos da Projeção Astral em <br>pessoas despreparadas</h2>
+                            <legend>Projeção Astral<i class="fa fa-picture-o" aria-hidden="true"
+                                    style="font-size: 1em;"></i></legend>
+                            <label>Postado a 2h</label><br>
+                            <p>Não há como ditar quais serão as sensações específicas que cada indivíduo irá sentir em
+                                suas práticas, mas podemos elencar quais são os principais sintomas projetivos que em
+                                grande parte das vezes os praticantes relatam. Em alguns casos ...<strong>Ver
+                                    mais</strong></p>
+                            <div class="opc-post">
+                                <p><i class="fa fa-heart" aria-hidden="true"></i>15</p>
+                                <p><i class="fa fa-comments-o" aria-hidden="true"></i>2</p>
+                                <p><i class="fa fa-share" aria-hidden="true"></i>4</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-user">
+                        <div class="perfil-user"><img src="img/forum/perfil-forum3.jpg" alt="">
+                            <h4>Bia034</h4>
+                            <p id="off"><i class="fa fa-circle" aria-hidden="true"></i>Offline</p>
+                        </div>
+                        <div class="conteudo-post">
+                            <h2>Os misteriosos Corredores Bavic</h2>
+                            <legend>Avistamentos<i class="fa fa-picture-o" aria-hidden="true"
+                                    style="font-size: 1em;"></i></legend>
+                            <label>Postado a 8h</label><br>
+                            <p>Em 1954, o famoso Ufólogo Aimé Michel estudou as trajetórias de UFOs nos céus da Europa,
+                                descobrindo certos caminhos no ar, talvez caminhos eletro-magnéticos, e criou um
+                                conceito a partir das suas observações: A Linha Bavic. O nome Bavic é a junção dos nomes
+                                de duas cidades francesas - Bayonne e Vichy - onde o alinhamento entre...<strong>Ver
+                                    mais</strong></p>
+                            <div class="opc-post">
+                                <p><i class="fa fa-heart" aria-hidden="true"></i>45</p>
+                                <p><i class="fa fa-comments-o" aria-hidden="true"></i>3</p>
+                                <p><i class="fa fa-share" aria-hidden="true"></i>3</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-user">
+                        <div class="perfil-user"><img src="img/forum/perfil-forum4.jpg" alt="">
+                            <h4>Eliort912</h4>
+                            <p id="on"><i class="fa fa-circle" aria-hidden="true"></i>Online</p>
+                        </div>
+                        <div class="conteudo-post">
+                            <h2>O famoso Caso Barroso</h2>
+                            <legend>Abdução<i class="fa fa-picture-o" aria-hidden="true" style="font-size: 1em;"></i>
+                            </legend>
+                            <label>Postado a 60 min</label><br>
+                            <p>O Caso Barroso, ocorrido em 3 de abril de 1976, em Quixadá, Ceará, mostra a face terrível
+                                que pode se esconder por trás de um caso ufológico. Após um contato ufológico, o
+                                protagonista, Luis Barroso Fernandes, apresenta uma estranha regressão mental, ao
+                                mesmo...<strong>Ver mais</strong></p>
+                            <div class="opc-post">
+                                <p><i class="fa fa-heart" aria-hidden="true"></i>35</p>
+                                <p><i class="fa fa-comments-o" aria-hidden="true"></i>3</p>
+                                <p><i class="fa fa-share" aria-hidden="true"></i>7</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post-user">
+                        <div class="perfil-user"><img src="img/forum/perfil-forum5.jpg" alt="">
+                            <h4>Vanessa022</h4>
+                            <p id="on"><i class="fa fa-circle" aria-hidden="true"></i>Online</p>
+                        </div>
+                        <div class="conteudo-post">
+                            <h2>A Ufologia e os avanços na Astronomia</h2>
+                            <legend>Astronomia<i class="fa fa-picture-o" aria-hidden="true" style="font-size: 1em;"></i>
+                            </legend>
+                            <label>Postado a 25 min</label><br>
+                            <p>Lamentavelmente, não são poucos os ufólogos brasileiros a afirmar que, já que os
+                                alienígenas estão chegando aqui em suas fabulosas naves, algumas vezes até caindo sobre
+                                nosso pequeno planeta – como acreditamos que aconteceu em Roswell e Varginha –, é
+                                completamente ...<strong>Ver mais</strong></p>
+                            <div class="opc-post">
+                                <p><i class="fa fa-heart" aria-hidden="true"></i>32</p>
+                                <p><i class="fa fa-comments-o" aria-hidden="true"></i>10</p>
+                                <p><i class="fa fa-share" aria-hidden="true"></i>0</p>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="more2">
+                        <a href="">
+                            <p>VER MAIS<i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="social">
+            <p>Siga nossas redes sociais:</p>
+            <li><a href="https://www.facebook.com/Lumni-Quixad%C3%A1-100732148033586/?modal=admin_todo_tour"
+                    target="_blank" class="fa fa-facebook-official" style="font-size: 25px"></a></li>
+            <li><a href="https://www.instagram.com/lumniqoficial/" target="_blank" class="fa fa-instagram"
+                    style="font-size: 25px"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCUl6dEKOFaK24zm76G0HDrw?view_as=subscriber" target="_blank"
+                    class="fa fa-youtube-play" style="font-size: 25px"></a></li>
+        </ul>
+        <br>
+        <p id="copy">&copy; 2019 By Portal Lumni, Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Modal Postagem Fórum-->
+
+    <div id="modal-post" class="modal-container">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <br><br><br><br><br><br><br>
+            <div class="post-user">
+                <div class="perfil-user"><img src="img/forum/perfil-forum1.jpg" alt="">
+                    <h4>André123</h4>
+                    <p id="on"><i class="fa fa-circle" aria-hidden="true"></i>Online</p>
+                </div>
+                <div class="conteudo-post">
+                    <h2>Surpreendente Palestra Ufológica<br> na Paranapiacaba</h2>
+                    <legend>Palestra Ufológica<i class="fa fa-video-camera" aria-hidden="true"
+                            class="icon-indicator" style="font-size: 1em;"></i></legend>
+                    <label>Postado a 12 min</label></i><br>
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/EplDYoTwT2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Em 08 de Agosto de 2015 ocorreu o 1º Debate Ufológico de Paranapiacaba, dentro da III SteamCon, o maior evento de SteamPunk do Brasil.</p>
+                    <p>Como esse era o primeiro evento de ufologia organizado por nós, pensei: Poxa, vejo sempre nos eventos por ai as pessoas falando de tudo na ufologia, e em grande parte, falando coisas que se avaliarmos com um olhar mais crítico, nem tem a ver com ufologia mesmo, então pensei. É isso, vou fazer uma palestra com os conceitos básicos sobre o tema.</p>
+                    <p>Achei que seria uma boa ideia mostrar para o público não só o leigo, mas também àqueles que já estão no meio ufológico o que é realmente o conceito de ufologia, qual é o papel do ufólogo, o envolvimento das forças armadas e tudo mais. Afinal, hoje em dia os congressos de ufologia são saturados de coisas bizarras, como gente que se diz “reencarnação de ETs”, contatados que nunca podem provar seus contatos, pessoas que alegam passear de disco voador semanalmente, etc… isso pra não falar aqueles eventos de ufologia que na saída existe aquela barraquinha vendendo os famosos “cristais”, “pedrinhas mágicas de acrílico” que defendem você dos “ataques reptilianos no plano astral” e toda sorte de maluquices que nada tem a ver com ufologia, e são apenas engodos para tirar dinheiro dos incautos que ali estão.</p>
+                    <p>Se você esteve no evento, poderá rever a palestra, e se você não foi, essa é uma excelente oportunidade para assistir o que perdeu lá. Por que aqui na rede Brasileira de Pesquisas Ufológicas é assim, sempre que podemos, disponibilizamos nosso conhecimento e trabalho gratuitamente para todos.</p>
+
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0"></script>
+                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+
+                    <!--<div class="comentarios">
+                        <div class="coment">
+                        <div class="usuario-modal"><img src="img/perfil-6.png" alt="" width="15%" style="margin: 0;">
+                        <h4>Lucas</h4></div>
+                        <p>Não estive na palestra mais gostei da ideia :)</p>
+                        </div>
+                    </div>-->
+                </div>
+        </div>
+    </div>
+</body>
+<script src="js/mob-menu.js"></script>
+<script src="js/background-video.js"></script>
+<script src="js/fullscreen-search.js"></script>
+<script src="js/user-dropdown.js"></script>
+<script src="js/mostra-post-modal.js"></script>
+</html>

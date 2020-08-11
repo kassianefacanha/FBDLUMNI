@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Lumni</title>
+  <link rel="stylesheet" href="css/princ.css">
+  <link rel="stylesheet" href="icons/style.css" />
+  <link rel="stylesheet" href="css/mob-menu.css">
+  <link rel="stylesheet" href="css/vertical-menu.css">
+  <link rel="stylesheet" href="css/fs-busca.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/icon4.png"/>
+  <link rel="stylesheet" href="css/events.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <img src="img/logo.png" id="logo" alt="">
+    <ul>
+      <li class="nav-link"><a href="index.html">INÍCIO</a></li>
+      <li class="nav-link"><a href="forum.html">FÓRUM</a></li>
+      <li class="nav-link"><a href="loja.html">LOJA</a></li>
+      <li class="nav-link"><a href="eventos.html">EVENTOS</a></li>
+      <li class="nav-link"><a href="relatos.html">RELATOS</a></li>
+      <li class="nav-link"><a href="sobre.html">SOBRE NÓS</a></li>
+      <li class="secundary-menu">
+        <form class="openBtn" action="" onclick="openSearch();">
+          <input type="text" placeholder="O que você procura..." name="busca">
+          <button type="submit"><i class="icon-B" id="lupa"></i></button>
+        </form>
+      </li>
+      <li class="secundary-menu"><button><i class="icon-I sub-menu"></i></button></li>
+      <li id="loja" class="secundary-menu"><button><i class="icon-M sub-menu"><sup>0</sup></i></li>
+      <li id="user" class="secundary-menu"><button><i class="icon-U sub-menu"></i>
+          <legend>Entre ou<br> Cadastre-se</legend>
+        </button>
+        
+      </li>
+    </ul>
+    <input type="checkbox" id="hub-menu">
+    <label for="hub-menu" onclick="openNav()">&#9776;</label>
+  </nav>
+  <!-- Menu Mobile -->
+  <div id="mob-menu" class="container-mob-menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="list-menus">
+      <a href="index.html">INÍCIO</a>
+      <a href="forum.html">FÓRUM</a>
+      <a href="loja.html">LOJA</a>
+      <a href="eventos.html">EVENTOS</a>
+      <a href="relatos.html">RELATOS</a>
+      <a href="sobre.html">SOBRE NÓS</a>
+    </div>
+  </div>
+  <!-- Menu Mobile de Busca Tela Cheia -->
+  <div id="fullscreen-search" class="container-src">
+    <span class="closebtn" onclick="closeSearch();">×</span>
+    <div class="container-src-full">
+      <form action="">
+        <input type="text" placeholder="O que você procura?" name="search">
+        <button type="submit"><i class="icon-B"></i></button>
+      </form>
+    </div> 
+  </div>
+
+  <!-- Vertical Menu-->
+  <div id="vertical-menu" class="sidenav">
+    <a href="#" id="welcome" style="background-color: rgb(16,18,64);">PALESTRAS</a>
+    <a href="#" id="news" style="background-color: rgb(16,18,64); color: white;">TRILHAS UFOLÓGICAS</a>
+    <a href="#" id="products" style="background-color: rgb(16,18,64);">VIGÍLIAS</a>
+  </div>
+      <section class="slider-presentation">
+          <div class="conteudo-slider">
+          <h2>Vigília Ufológica na <br> Pedra do ET</h2>
+          <h3>04 de Dezembro as 16:30</h3>
+          <p>Organização: Quixadá Turismo - Agência de Turismo Ufológico e de Aventura</p>
+            <div class="more-b">
+            <button id="ag"><a href="https://quixadaturismo.com/" target="_blank">Marcar presença</a></button> <button id="mi"><a href="https://quixadaturismo.com/" target="_blank">Mais informações <i class="fa fa-plus-circle" aria-hidden="true"></i></a></button>
+            </div>
+          </div>
+      </section>
+      <section class="filter-events">
+        <div class="aside-events">
+          <div class="calendar">
+            <div class="image">
+              <br><br><br>
+                <h1>Agenda</h1>
+                <p>Dezembro | 2019</p>
+            </div>
+            <div class="date">
+              <div class="day">D</div>
+              <div class="day">S</div>
+              <div class="day">T</div>
+              <div class="day">Q</div>
+              <div class="day">Q</div>
+              <div class="day">S</div>
+              <div class="day">S</div>
+              <div class="number">1</div>
+              <div class="number">2</div>
+              <div class="number">3</div>
+              <div class="number active">4</div>
+              <div class="number">5</div>
+              <div class="number">6</div>
+              <div class="number">7</div>
+              <div class="number active">8</div>
+              <div class="number">9</div>
+              <div class="number">10</div>
+              <div class="number">11</div>
+              <div class="number">12</div>
+              <div class="number">13</div>
+              <div class="number active">14</div>
+              <div class="number">15</div>
+              <div class="number">16</div>
+              <div class="number active">17</div>
+              <div class="number">18</div>
+              <div class="number">19</div>
+              <div class="number active">20</div>
+              <div class="number">21</div>
+              <div class="number">22</div>
+              <div class="number">23</div>
+              <div class="number">24</div>
+              <div class="number">25</div>
+              <div class="number">26</div>
+              <div class="number">27</div>
+              <div class="number">28</div>
+              <div class="number">29</div>
+              <div class="number">30</div>
+              <div class="number">31</div>
+            </div>
+          </div>
+          <h4>Pesquisar evento por data:</h4>
+          <form action="">
+          <input type="date" name="" id="">
+          <button><i class="icon-B" id="lupa"></i></button>
+          </form>
+          <h2 class="no-mob">Categorias</h2>
+          <div class="opc-events">
+              <a href=""><p>Palestras</p></a>
+              <a href=""><p>Vigílias</p></a>
+              <a href=""><p>Trilhas Ufológicas</p></a>
+          </div>
+          
+          <div class="apoio">
+          <h2>Colaboradores</h2>
+          <img src="img/events/qxdturismo.png" width="45%" alt="">
+          <img src="img/events/prefquixada.png" width="45%" alt="">
+          </div>
+        </div>
+          <div class="main-events">
+              <div class="container-event">
+                    <h1>Próximos Eventos</h1>
+                    <div class="full-list-events">
+                        <ul class="cont-event">
+                          <li><div id="img-event1"><legend>08/12 Domingo as 15:30</legend></div>
+                          <div class="info-event">
+                          <h2>Fenômenos Ufológicos no Ceará</h2>
+                          <h3>Palestra gratuita no Centro Cultural Raquel de Queiroz</h3>
+                          <p><i class="fa fa-map-marker" aria-hidden="true"></i> Endereço: R. do Chalé - Centro, Quixadá - CE, 63900-000</p>
+                          <p><i class="fa fa-phone" aria-hidden="true"></i>(85) 99999-9999</p>
+                          <p><strong>Palestrante:</strong></p>
+                          <div class="palest">
+                          <img src="img/events/perfil1.jpg" alt="">
+                          <div>
+                          <p><strong>Robson Alencar</strong></p>
+                          <p>Ufólogo Local</p>
+                          </div>
+                          </div>
+                          <button style="background-color: rgb(16,18,64);"><i class="fa fa-heart" aria-hidden="true"></i>Confirmar Presença</button><button style="background-color: rgb(63, 22, 91);"><i class="fa fa-star" aria-hidden="true"></i>Tenho Interesse</button>
+                          </div>
+                          </li>
+
+                          <li><div id="img-event2"><legend>14/12 Sábado as 17:30</legend></div>
+                            <div class="info-event">
+                            <h2>Ocorrências da Paranormalidade</h2>
+                            <h3>Palestra na Casa de Saberes Cego Aderaldo<a href="">Adquira seu ingresso aqui</a></h3>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Endereço: R. Pascoal Crispino, 167 - Centro, Quixadá - CE, 63900-000</p>
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>(85) 99999-9999</p>
+                            <p><strong>Palestrante:</strong></p>
+                            <div class="palest">
+                            <img src="img/events/perfil2.jpg" alt="">
+                            <div>
+                            <p><strong>Reginaldo</strong></p>
+                            <p>Ufólogo Local</p>
+                            </div>
+                            </div>
+                            <button style="background-color: rgb(16,18,64);"><i class="fa fa-heart" aria-hidden="true"></i>Confirmar Presença</button><button style="background-color: rgb(63, 22, 91);"><i class="fa fa-star" aria-hidden="true"></i>Tenho Interesse</button>
+                            </div>
+                            </li>
+
+                            <li><div id="img-event3"><legend>17/12 Terça as 16:50</legend></div>
+                              <div class="info-event">
+                              <h2>Trilhando pontos Ufológicos</h2>
+                              <h3>Trilha no Vale Perdido</h3>
+                              <a href="">Adquira seu passe aqui</a>
+                              <p><i class="fa fa-map-marker" aria-hidden="true"></i> Saída: Av. Jesus Maria e José, 2010 - Jardim Monolitos, Quixadá - CE, 63900-000</p>
+                              <p><i class="fa fa-phone" aria-hidden="true"></i>(85) 99999-9999</p>
+                              <p><strong>Organização:</strong></p>
+                              <div class="palest">
+                              <img src="img/events/qxdturismo.png" alt="">
+                              <div>
+                              <p><strong>Quixadá Turismo</strong></p>
+                              <p>Agência Turística Ufológica e de Aventura</p>
+                              </div>
+                              </div>
+                              <button style="background-color: rgb(16,18,64);"><i class="fa fa-heart" aria-hidden="true"></i>Confirmar Presença</button><button style="background-color: rgb(63, 22, 91);"><i class="fa fa-star" aria-hidden="true"></i>Tenho Interesse</button>
+                              </div>
+                              </li>
+
+                              <li><div id="img-event4"><legend>20/12 Sexta as 17:00</legend></div>
+                                <div class="info-event">
+                                <h2>Vivências do Desconhecido</h2>
+                                <h3>Vigília Ufológica no Açude Cedro</h3>
+                                <a href="">Adquira seu passe gratuito aqui</a>
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Saída: Av. Plácido Castelo, 1959-2031 - Centro, Quixadá - CE, 63900-000</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i>(85) 99999-9999</p>
+                                <p><strong>Organização:</strong></p>
+                                <div class="palest">
+                                <img src="img/events/qxdturismo.png" alt="">
+                                <div>
+                                <p><strong>Quixadá Turismo</strong></p>
+                                <p>Agência Turística Ufológica e de Aventura</p>
+                                </div>
+                                </div>
+                                <button style="background-color: rgb(16,18,64);"><i class="fa fa-heart" aria-hidden="true"></i>Confirmar Presença</button><button style="background-color: rgb(63, 22, 91);"><i class="fa fa-star" aria-hidden="true"></i>Tenho Interesse</button>
+                                </div>
+                                </li>
+                        </ul>
+                    </div>
+              </div>
+          </div>
+      </section>
+  </main>
+  <footer class="rodape">
+    <ul class="social">
+      <p>Siga nossas redes sociais:</p>
+      <li><a href="https://www.facebook.com/Lumni-Quixad%C3%A1-100732148033586/?modal=admin_todo_tour" target="_blank"
+          class="fa fa-facebook-official" style="font-size: 25px"></a></li>
+      <li><a href="https://www.instagram.com/lumniqoficial/" target="_blank" class="fa fa-instagram"
+          style="font-size: 25px"></a></li>
+      <li><a href="https://www.youtube.com/channel/UCUl6dEKOFaK24zm76G0HDrw?view_as=subscriber" target="_blank"
+          class="fa fa-youtube-play" style="font-size: 25px"></a></li>
+    </ul>
+    <br>
+    <p id="copy">&copy; 2019 By Portal Lumni, Todos os direitos reservados</p>
+  </footer>
+  <!-- Modal Cadastro/Login-->
+
+  <div id="modal-user" class="modal-container">
+    <div class="modal">
+      <button class="fechar">X</button>
+    <span><img src="img/logo.png" id="logo" alt=""></span>
+    <div class="menu-user"> 
+    <button id="bt1">Cadastro</button>ou<button id="bt2">Login</button>
+    </div>
+
+    <div id="cadastro">
+        <h2>Cadastre-se e fique por dentro de todas as novidades :)</h2>
+        <form action="">
+        <input type="text" placeholder="Nome Completo">
+        <input type="text" placeholder="E-mail">
+        <input type="password" placeholder="Senha">
+        <button>Cadastrar</button>
+        </form>
+    </div>
+    <div id="login">
+      <h2>Entre na sua conta e aproveite :)</h2>
+      <form action="">
+      <input type="text" placeholder="E-mail">
+      <input type="password" placeholder="Senha">
+      <a href="">Esqueceu sua senha? <strong>Recupere aqui</strong></a>
+      <button>Entrar</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</body>
+    <script src="js/mob-menu.js"></script>
+    <script src="js/background-video.js"></script>
+    <script src="js/mostrar-modal.js"></script>
+    <script src="js/fullscreen-search.js"></script>
+    <script src="js/control-menu-modal.js"></script>
+</html>

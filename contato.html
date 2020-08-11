@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Lumni</title>
+    <link rel="stylesheet" href="css/princ.css">
+    <link rel="stylesheet" href="icons/style.css">
+    <link rel="stylesheet" href="css/mob-menu.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/fs-busca.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icon4.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo.png" id="logo" alt="">
+        <ul>
+            <li class="nav-link"><a href="index.html">INÍCIO</a></li>
+            <li class="nav-link"><a href="forum.html">FÓRUM</a></li>
+            <li class="nav-link"><a href="loja.html">LOJA</a></li>
+            <li class="nav-link"><a href="eventos.html">EVENTOS</a></li>
+            <li class="nav-link"><a href="relatos.html">RELATOS</a></li>
+            <li class="nav-link"><a href="sobre.html">SOBRE NÓS</a></li>
+            <li class="secundary-menu">
+                <form class="openBtn" action="" onclick="openSearch();">
+                    <input type="text" placeholder="O que você procura..." name="busca">
+                    <button type="submit"><i class="icon-B" id="lupa"></i></button>
+                </form>
+            </li>
+            <li class="secundary-menu"><button><i class="icon-I sub-menu"></i></button></li>
+            <li id="loja" class="secundary-menu"><button><i class="icon-M sub-menu"><sup>0</sup></i></li>
+            <li id="user" class="secundary-menu"><button><i class="icon-U sub-menu"></i>
+                    <legend>Entre ou<br> Cadastre-se</legend>
+                </button>
+
+            </li>
+        </ul>
+        <input type="checkbox" id="hub-menu">
+        <label for="hub-menu" onclick="openNav()">&#9776;</label>
+    </nav>
+    <!-- Menu Mobile -->
+    <div id="mob-menu" class="container-mob-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="list-menus">
+            <a href="index.html">INÍCIO</a>
+            <a href="forum.html">FÓRUM</a>
+            <a href="loja.html">LOJA</a>
+            <a href="eventos.html">EVENTOS</a>
+            <a href="relatos.html">RELATOS</a>
+            <a href="sobre.html">SOBRE NÓS</a>
+        </div>
+    </div>
+    <!-- Menu Mobile de Busca Tela Cheia -->
+    <div id="fullscreen-search" class="container-src">
+        <span class="closebtn" onclick="closeSearch();">×</span>
+        <div class="container-src-full">
+            <form action="">
+                <input type="text" placeholder="O que você procura?" name="search">
+                <button type="submit"><i class="icon-B"></i></button>
+            </form>
+        </div>
+    </div>
+    <main>
+        <ul>
+            <li class="formulario">
+                <h2>Fale Conosco</h2>
+                <p>Dicas, sugestões, opniões, críticas construtivas, recados, parcerias ... Entre em contato conosco e
+                    se sinta abraçado pela ufologia de Quixadá!</p>
+                <form action="">
+                    <input type="text" name="nome" id="nome" required placeholder="Nome Completo"><br>
+                    <input type="email" name="email" id="email" required placeholder="E-mail"><br>
+                    <input type="text" name="tel" id="tel" placeholder="Telefone"><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Deixe seu recado :)"></textarea>
+                    <button value="Enviar">Enviar</button>
+                </form>
+            </li>
+            <li class="informs">
+                <p><strong>Endereço:</strong> Rua Basílio Pinto,254 - Centro,Quixadá - CE, 63900,000</p>
+                <p><strong>Telefone:</strong> (88)94063-7526</p>
+                <p><strong>E-mail:</strong> lumniquixada@gmail.com</p>
+            </li>
+
+        </ul>
+    </main>
+    <footer>
+        <ul id="princ">
+
+            <li>
+                <ul class="contato">
+                    <li>
+                        <p><span><a href="contato.html">FALE CONOSCO</a></span></p>
+                    </li>
+                    <li>
+                        <p><span><a href="marca.html">MANUAL DE MARCA</a></span></p>
+                    </li>
+                    <li>
+                        <p><span><a href="downloads.html">DOWNLOADS</span></a></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p id="copy">&copy; 2019 By Portal Lumni, Todos os direitos reservados</p>
+            </li>
+            <li>
+                <ul class="social">
+                    <p>Siga nossas redes sociais:</p>
+                    <li><a href="https://www.facebook.com/Lumni-Quixad%C3%A1-100732148033586/?modal=admin_todo_tour"
+                            target="_blank" class="fa fa-facebook-official" style="font-size: 25px"></a></li>
+                    <li><a href="https://www.instagram.com/lumniqoficial/" target="_blank" class="fa fa-instagram"
+                            style="font-size: 25px"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCUl6dEKOFaK24zm76G0HDrw?view_as=subscriber"
+                            target="_blank" class="fa fa-youtube-play" style="font-size: 25px"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/mob-menu.js"></script>
+    <script src="js/fullscreen-search.js"></script>
+</body>
+
+</html>

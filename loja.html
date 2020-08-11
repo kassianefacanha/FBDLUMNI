@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Lumni</title>
+    <link rel="stylesheet" href="css/princ.css">
+    <link rel="stylesheet" href="icons/style.css" />
+    <link rel="stylesheet" href="css/mob-menu.css">
+    <link rel="stylesheet" href="css/bg-video.css">
+    <link rel="stylesheet" href="css/vertical-menu.css">
+    <link rel="stylesheet" href="css/loja.css">
+    <link rel="stylesheet" href="css/slide-loja.css">
+    <link rel="stylesheet" href="css/fs-busca.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icon4.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo.png" id="logo" alt="">
+        <ul>
+            <li class="nav-link"><a href="index.html">INÍCIO</a></li>
+            <li class="nav-link"><a href="forum.html">FÓRUM</a></li>
+            <li class="nav-link"><a href="loja.html">LOJA</a></li>
+            <li class="nav-link"><a href="eventos.html">EVENTOS</a></li>
+            <li class="nav-link"><a href="relatos.html">RELATOS</a></li> 
+            <li class="nav-link"><a href="sobre.html">SOBRE NÓS</a></li>
+            <li class="secundary-menu">
+                <form class="openBtn" action="" onclick="openSearch();">
+                    <input type="text" placeholder="Buscar na Loja..." name="busca">
+                    <button type="submit"><i class="icon-B" id="lupa"></i></button>
+                </form>
+            </li>
+            <li class="secundary-menu"><button><i class="icon-I sub-menu"></i></button></li>
+            <li id="loja" class="secundary-menu"><button><i class="icon-M sub-menu"><sup>0</sup></i></li>
+            <li id="user" class="secundary-menu"><button><i class="icon-U sub-menu"></i>
+                    <legend>Entre ou<br> Cadastre-se</legend>
+                </button>
+
+            </li>
+        </ul>
+        <input type="checkbox" id="hub-menu">
+        <label for="hub-menu" onclick="openNav()">&#9776;</label>
+    </nav>
+    <!-- Menu Mobile -->
+    <div id="mob-menu" class="container-mob-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="list-menus">
+            <a href="index.html">INÍCIO</a>
+            <a href="forum.html">FÓRUM</a>
+            <a href="loja.html">LOJA</a>
+            <a href="eventos.html">EVENTOS</a>
+            <a href="relatos.html">RELATOS</a>
+            <a href="sobre.html">SOBRE NÓS</a>
+        </div>
+    </div>
+    <!-- Menu Mobile de Busca Tela Cheia -->
+    <div id="fullscreen-search" class="container-src">
+        <span class="closebtn" onclick="closeSearch();">×</span>
+        <div class="container-src-full">
+            <form action="">
+                <input type="text" placeholder="Buscar na Loja..." name="search">
+                <button type="submit"><i class="icon-B"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Vertical Menu-->
+    <div id="vertical-menu" class="sidenav view-mob">
+        <a href="#bottons" id="sec8">BOTTONS</a>
+        <a href="#canecas" id="sec9">CANECAS</a>
+        <a href="#camisas" id="sec10">CAMISAS</a>
+        <a href="#chaveiros" id="sec11">CHAVEIROS</a>
+        <a href="#garrafas" id="sec12">GARRAFAS</a>
+        <a href="#all-prod" id="sec13">MELHORES OFERTAS</a>
+    </div>
+
+    <section class="open-store">
+        <div>
+        <h1>Lumni Store</h1>
+        <p>Loja de produtos ufológicos</p>
+        </div>
+    </section>
+    <section class="promo-slider">
+        <div id="slider" class="no-mob">
+            <figure>
+                <img src="img/banneranuncio0.png" alt="">
+                <img src="img/banneranuncio2.png" alt="">
+                <img src="img/banneranuncio3.png" alt="">
+            </figure>
+        </div>
+        <div class="etq-promo">
+            <ul>
+                <li><i class="fa fa-plane" aria-hidden="true"></i><legend>Entregas em todo o Brasil</legend></li>
+                <li><i class="fa fa-money" aria-hidden="true"></i><legend>Preços Exclusivos</legend></li>
+                <li><i class="fa fa-handshake-o" aria-hidden="true"></i><legend>Compras Rápidas</legend></li>
+                <li><i class="fa fa-truck" aria-hidden="true"></i><legend>Frete Grátis</legend></li>
+            </ul>
+        </div>
+        <div id="slider" class="view-mob">
+            <figure>
+                <img src="img/banneranuncio0.png" alt="">
+                <img src="img/banneranuncio2.png" alt="">
+                <img src="img/banneranuncio3.png" alt="">
+            </figure>
+        </div>
+    </section>
+    <main>
+        <div class="bloco" id="sc-products">
+            <div class="filtros-loja">
+                <div class="categ" >
+                    <h2>Tipos de Produto</h2>
+                    <p>Todos       <strong>(72)</strong></p>
+                    <p>Bottons     <strong>(12)</strong></p>
+                    <p>Canecas     <strong>(12)</strong></p>
+                    <p>Camisas     <strong>(12)</strong></p>
+                    <p>Chaveiros   <strong>(12)</strong></p>
+                    <p>Garrafas    <strong>(12)</strong></p>
+
+                    <h2>Escolha por Preço</h2>
+                    <p>de <strong>R$4,50</strong> a <strong>R$10,00</strong></p>
+                    <p>de <strong>R$10,00</strong> a <strong>R$15,00</strong></p>
+                    <p>de <strong>R$15,00</strong> a <strong>R$25,00</strong></p>
+                    <h2>Escolha por Cores</h2>
+                    <div class="cor-prod">
+                    <button style="background-color: rgb(116,27,103);"></button><p>Rosa</p>
+                    <button style="background-color: rgb(63, 22, 91);"></button><p>Roxo</p>
+                    <button style="background-color: rgb(113,32,115);"></button><p>Roxo Claro</p>
+                    <button style="background-color: rgb(16,18,64);"></button><p>Azul</p>
+                    <button style="background-color: rgb(1,1,1);"></button><p>Preto</p>
+                    </div>
+                </div>
+                <div class="categ">
+                    <h2>Formas de Pagamento</h2>
+                    <img src="img/pagamento.png" alt="" width="100%"><br>
+                    <p >Contate Nossa Central de Vendas:</p><br>
+                    <p>(88) 99999-9999</p><br><br>
+                    <p>Que tal ficar por dentro de todas as nossas ofertas em primeira mão? Deixe seu e-mail e aproveite :)</p>
+                    <a href="" style="font-family: Frutiger Bold; margin: 10pt 0;">Política de Privacidade</a>
+                    <form action="">
+                        <input type="email" placeholder="E-mail"><button>Enviar</button>
+                    </form>
+                    <h2>Loja Física</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.81639403134!2d-39.02014108536252!3d-4.970164452137484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7be9fc7f5db7ba1%3A0xfa1fbdf832dc2317!2sBoby%20Pecas!5e0!3m2!1spt-BR!2sbr!4v1577390477763!5m2!1spt-BR!2sbr" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div>
+                <div class="cab-prod" id="all-prod">
+                <h1>Melhores ofertas para você</h1>
+                <ul>
+                    <li class="dropdown">
+                      <a href="javascript:void(0)" class="dropbtn">Todos<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                      <div class="dropdown-content">
+                        <a href="#">Mais baratos</a>
+                        <a href="#">Ordem Alfabética</a>
+                        <a href="#">Recentes</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="h-stoque">
+                    <li class="container-prod"><img src="img/loja/can2.png" width="100%" alt="">
+                        <h3>Caneca Relato Quase Abdução</h3>
+                        <div class="avl">
+                            <p>R$ 20,00</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod"><img src="img/loja/can4.png" width="100%" alt=""><br>
+                        <h3>Caneca Relato Luminoso</h3>
+                        <div class="avl">
+                            <p>R$ 20,00</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite " aria-hidden="true"></i>
+                            <i class="fa fa-star favorite" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod"><img src="img/loja/cha1.png" width="100%" alt=""><br>
+                        <h3>Chaveiro OVNI Cor Azul</h3>
+                        <div class="avl">
+                            <p>R$ 4,50</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite " aria-hidden="true"></i>
+                            <i class="fa fa-star favorite" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod"><img src="img/loja/cha2.png" width="100%" alt=""><br>
+                        <h3>Chaveiro OVNI Cor Preta</h3>
+                        <div class="avl">
+                            <p>R$ 4,50</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite " aria-hidden="true"></i>
+                            <i class="fa fa-star favorite " aria-hidden="true"></i>
+                            <i class="fa fa-star favorite" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod no-mob"><img src="img/loja/cha5.png" width="100%" alt=""><br>
+                        <h3>Chaveiro OVNI Cor Rosa</h3>
+                        <div class="avl">
+                            <p>R$ 4,50</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod no-mob"><img src="img/loja/gar1.png" width="100%" alt=""><br>
+                        <h3>Garrafa Grey Alfa</h3>
+                        <div class="avl">
+                            <p>R$ 10,00</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite " aria-hidden="true"></i>
+                            <i class="fa fa-star favorite" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod no-mob"><img src="img/loja/gar3.png" width="100%" alt=""><br>
+                        <h3>Garrafa Nuances Solares </h3>
+                        <div class="avl">
+                            <p>R$ 10,00</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod no-mob"><img src="img/loja/botton1.png" width="100%" alt=""><br>
+                        <h3>Bottons Galáticos</h3><br><br>
+                        <div class="avl">
+                            <p>R$ 10,00</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite " aria-hidden="true"></i>
+                            <i class="fa fa-star favorite" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="more2">
+                    <a href="">
+                        <p>VER MAIS<i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+                
+                <div class="cab-prod">
+                    <h1>Bottons</h1>
+                    <ul>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Todos<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                          <div class="dropdown-content">
+                            <a href="#">Cor Única</a>
+                            <a href="#">Gravura Sublimada</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                <ul class="h-stoque" id="bottons"> 
+                    <li class="container-prod"><img src="img/loja/botton1.png" width="100%" alt=""><br>
+                        <h3>Bottons Galáticos</h3>
+                        <div class="avl">
+                            <p>R$ 15,00</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite " aria-hidden="true"></i>
+                            <i class="fa fa-star favorite" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod"><img src="img/loja/botton1.png" width="100%" alt=""><br>
+                        <h3>Bottons Galáticos</h3>
+                        <div class="avl">
+                            <p>R$ 15,00</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                    <li class="container-prod"><img src="img/loja/botton1.png" width="100%" alt=""><br>
+                        <h3>Bottons Galáticos</h3>
+                        <div class="avl">
+                            <p>R$ 15,00</p>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                            <i class="fa fa-star favorite " aria-hidden="true"></i>
+                            <i class="fa fa-star favorite" aria-hidden="true"></i>
+                        </div>
+                        <ul class="options">
+                            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                            <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                            <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="more2">
+                    <a href="">
+                        <p>VER MAIS<i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+
+
+                <div class="cab-prod">
+                    <h1>Canecas</h1>
+                    <ul>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Todas<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                          <div class="dropdown-content">
+                            <a href="#">Frases ou Relatos</a>
+                            <a href="#">Paisagens Ufológicas</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <ul class="h-stoque" id="canecas">
+                        <li class="container-prod"><img src="img/loja/can1.png" width="100%" alt="">
+                            <h3>Caneca Nave Lumni</h3>
+                            <div class="avl">
+                                <p>R$ 20,00</p>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite" aria-hidden="true"></i>
+                            </div>
+                            <ul class="options">
+                                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="container-prod"><img src="img/loja/can2.png" width="100%" alt=""><br>
+                            <h3>Caneca Relato Quase Abdução</h3>
+                            <div class="avl">
+                                <p>R$ 20,00</p>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                <i class="fa fa-star favorite" aria-hidden="true"></i>
+                            </div>
+                            <ul class="options">
+                                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="container-prod"><img src="img/loja/can3.png" width="100%" alt=""><br>
+                            <h3>Caneca Relato Paralisante</h3>
+                            <div class="avl">
+                                <p>R$ 20,00</p>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                <i class="fa fa-star favorite" aria-hidden="true"></i>
+                            </div>
+                            <ul class="options">
+                                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="container-prod"><img src="img/loja/can4.png" width="100%" alt=""><br>
+                            <h3>Caneca Relato Luminoso</h3>
+                            <div class="avl">
+                                <p>R$ 20,00</p>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                <i class="fa fa-star favorite" aria-hidden="true"></i>
+                            </div>
+                            <ul class="options">
+                                <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="more2">
+                        <a href="">
+                            <p>VER MAIS<i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+                        </a>
+                    </div>
+
+                    <div class="cab-prod">
+                        <h1>Chaveiros</h1>
+                        <ul>
+                            <li class="dropdown">
+                              <a href="javascript:void(0)" class="dropbtn">Todos<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                              <div class="dropdown-content">
+                                <a href="#">Naves</a>
+                                <a href="#">Extraterrestres</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <ul class="h-stoque" id="chaveiros">
+                            <li class="container-prod"><img src="img/loja/cha1.png" width="100%" alt="">
+                                <h3>Chaveiro OVNI Cor Azul</h3>
+                                <div class="avl">
+                                    <p>R$ 4,50</p>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                </div>
+                                <ul class="options">
+                                    <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                    <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                </ul>
+                            </li>
+                            <li class="container-prod"><img src="img/loja/cha2.png" width="100%" alt=""><br>
+                                <h3>Chaveiro OVNI Cor Preto</h3>
+                                <div class="avl">
+                                    <p>R$ 4,50</p>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                </div>
+                                <ul class="options">
+                                    <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                    <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                </ul>
+                            </li>
+                            <li class="container-prod"><img src="img/loja/cha3.png" width="100%" alt=""><br>
+                                <h3>Chaveiro OVNI Cor Prata</h3>
+                                <div class="avl">
+                                    <p>R$ 4,50</p>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                </div>
+                                <ul class="options">
+                                    <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                    <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                </ul>
+                            </li>
+                            <li class="container-prod"><img src="img/loja/cha4.png" width="100%" alt=""><br>
+                                <h3>Chaveiro OVNI Cor Roxo Escuro</h3>
+                                <div class="avl">
+                                    <p>R$ 4,50</p>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                </div>
+                                <ul class="options">
+                                    <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                    <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                </ul>
+                            </li>
+                            <li class="container-prod"><img src="img/loja/cha5.png" width="100%" alt=""><br>
+                                <h3>Chaveiro OVNI Cor Rosa</h3>
+                                <div class="avl">
+                                    <p>R$ 4,50</p>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                </div>
+                                <ul class="options">
+                                    <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                    <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                </ul>
+                            </li>
+                            <li class="container-prod"><img src="img/loja/cha6.png" width="100%" alt=""><br>
+                                <h3>Chaveiro OVNI Cor Violeta</h3>
+                                <div class="avl">
+                                    <p>R$ 4,50</p>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                    <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                </div>
+                                <ul class="options">
+                                    <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                    <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                    <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="more2">
+                            <a href="">
+                                <p>VER MAIS<i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+                            </a>
+                        </div>
+
+                        <div class="cab-prod">
+                            <h1>Camisas</h1>
+                            <ul>
+                                <li class="dropdown">
+                                  <a href="javascript:void(0)" class="dropbtn">Todas<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                                  <div class="dropdown-content">
+                                    <a href="#">Estampa Única</a>
+                                    <a href="#">Estampa Sublimada</a>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <ul class="h-stoque" id="camisas"> 
+                                <li class="container-prod"><img src="img/loja/cam1.png" width="100%" alt=""><br>
+                                    <h3>Camisa de Pedras Ufológicas</h3>
+                                    <div class="avl">
+                                        <p>R$ 22,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="container-prod"><img src="img/loja/cam1.png" width="100%" alt=""><br>
+                                    <h3>Camisa de Pedras Ufológicas</h3>
+                                    <div class="avl">
+                                        <p>R$ 22,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="container-prod"><img src="img/loja/cam1.png" width="100%" alt=""><br>
+                                    <h3>Camisa de Pedras Ufológicas</h3>
+                                    <div class="avl">
+                                        <p>R$ 22,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="more2">
+                                <a href="">
+                                    <p>VER MAIS<i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+                                </a>
+                            </div>
+
+                            <div class="cab-prod">
+                                <h1>Garrafas</h1>
+                                <ul>
+                                    <li class="dropdown">
+                                      <a href="javascript:void(0)" class="dropbtn">Todas<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+                                      <div class="dropdown-content">
+                                        <a href="#">Ilustrações Extraterrestres</a>
+                                        <a href="#">Fotografias Ufológicas</a>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                            <ul class="h-stoque" id="garrafas"> 
+                                <li class="container-prod"><img src="img/loja/gar1.png" width="100%" alt=""><br>
+                                    <h3>Garrafa Grey Alfa</h3>
+                                    <div class="avl">
+                                        <p>R$ 10,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="container-prod"><img src="img/loja/gar2.png" width="100%" alt=""><br>
+                                    <h3>Garrafa Grey Beta</h3>
+                                    <div class="avl">
+                                        <p>R$ 10,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="container-prod"><img src="img/loja/gar3.png" width="100%" alt=""><br>
+                                    <h3>Garrafa Nuances Solares</h3>
+                                    <div class="avl">
+                                        <p>R$ 10,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="container-prod"><img src="img/loja/gar4.png" width="100%" alt=""><br>
+                                    <h3>Garrafa Nebulosa</h3>
+                                    <div class="avl">
+                                        <p>R$ 10,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="container-prod"><img src="img/loja/gar5.png" width="100%" alt=""><br>
+                                    <h3>Garrafa Grey Ômega</h3>
+                                    <div class="avl">
+                                        <p>R$ 10,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="container-prod"><img src="img/loja/gar6.png" width="100%" alt=""><br>
+                                    <h3>Garrafa de Pedras Ufológicas</h3>
+                                    <div class="avl">
+                                        <p>R$ 10,00</p>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite checked" aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite " aria-hidden="true"></i>
+                                        <i class="fa fa-star favorite" aria-hidden="true"></i>
+                                    </div>
+                                    <ul class="options">
+                                        <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                                        <li><a href=""><i class="fa fa-share-square-o" aria-hidden="true"></i></a></li>
+                                        <li id="compra"><a href="">Comprar<i class="icon-C"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="more2">
+                                <a href="">
+                                    <p>VER MAIS<i class="fa fa-plus-circle" aria-hidden="true"></i></p>
+                                </a>
+                            </div>
+            </div>
+        </div>  
+    </main>
+    <footer>
+        <ul class="social">
+            <p>Siga nossas redes sociais:</p>
+            <li><a href="https://www.facebook.com/Lumni-Quixad%C3%A1-100732148033586/?modal=admin_todo_tour"
+                    target="_blank" class="fa fa-facebook-official" style="font-size: 25px"></a></li>
+            <li><a href="https://www.instagram.com/lumniqoficial/" target="_blank" class="fa fa-instagram"
+                    style="font-size: 25px"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCUl6dEKOFaK24zm76G0HDrw?view_as=subscriber" target="_blank"
+                    class="fa fa-youtube-play" style="font-size: 25px"></a></li>
+        </ul>
+        <br>
+        <p id="copy">&copy; 2019 By Portal Lumni, Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Modal Cadastro/Login-->
+
+    <div id="modal-user" class="modal-container">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <span><img src="img/logo.png" id="logo" alt=""></span>
+            <div class="menu-user">
+                <button id="bt1">Cadastro</button>ou<button id="bt2">Login</button>
+            </div>
+
+            <div id="cadastro">
+                <h2>Cadastre-se e fique por dentro de todas as novidades :)</h2>
+                <form action="">
+                    <input type="text" placeholder="Nome Completo">
+                    <input type="text" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <button>Cadastrar</button>
+                </form>
+            </div>
+            <div id="login">
+                <h2>Entre na sua conta e aproveite :)</h2>
+                <form action="">
+                    <input type="text" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <a href="">Esqueceu sua senha? <strong>Recupere aqui</strong></a>
+                    <button>Entrar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="js/mob-menu.js"></script>
+<script src="js/background-video.js"></script>
+<script src="js/fullscreen-search.js"></script>
+<script src="js/mostrar-modal.js"></script>
+<script src="js/control-menu-modal.js"></script>
+</html>
