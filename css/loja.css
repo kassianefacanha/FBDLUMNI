@@ -1,0 +1,464 @@
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+#sc-products{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 8em 10em 4em 10em;
+    color: white;
+}
+
+
+
+#sc-products li{
+    list-style: none;
+}
+
+.filtros-loja{
+    padding: 0;
+    margin: 0;
+}
+.filtros-loja .categ{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10pt;
+    padding:  2em;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.categ h2{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding: 0;
+}
+.categ p{
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 13pt;
+    font-weight: 170%;
+    cursor: pointer;
+    font-family: 'Frutiger 45 Light';
+}
+.categ strong{
+    font-family: 'Frutiger Bold'; 
+    text-align: right;
+}
+.categ button{
+    border: none;
+    color: white;
+    width: 35%;
+    padding: 10pt;
+    margin: 5pt 0;
+    height: 10pt;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.categ .cor-prod{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    margin: 0;
+}
+.categ form{
+    display: flex;
+    align-items: center;
+    padding: 10pt 0;
+}
+.categ form input{
+    border: none;
+    padding: 12pt;
+    border-radius: 10pt 0 0 10pt;
+    background-color: rgb(240, 239, 239);
+    color: black;
+    width: 100%;
+    font-family: 'Frutiger 45 Light';
+    font-size: 12pt;
+    outline: 0;
+}
+.categ form button{
+    background-color: rgb(16,18,64);
+    color: white;
+    font-family: 'Frutiger Bold';
+    font-size: 12pt;
+    width: 25%;
+    height: 100%;
+    border-radius: 0 10pt 10pt 0;
+    padding: 10pt;
+}
+
+.cab-prod a:hover{
+    color: black;
+}
+.categ a{
+    color: rgb(16,18,64);
+}
+
+.categ .cor-prod p{
+    margin: 6pt;
+}
+.cab-prod{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 10pt 0;
+}
+
+.cab-prod h1{
+    color: rgb(0, 0, 0);
+    font-size: 25pt;
+    margin: 3pt;
+}
+
+.cab-prod ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.cab-prod li a, .dropbtn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 15pt;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  
+.cab-prod  li.dropdown {
+    display: inline-block;
+  }
+
+.cab-prod i{
+    font-size: 15pt;
+    float: right;
+    margin: 0 5pt;
+}
+  
+.cab-prod  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    right: 11%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.cab-prod  .dropdown-content a {
+    color: rgb(32, 32, 32);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+  }
+.cab-prod .dropdown-content a:hover {background-color:rgb(16,18,64); color: white;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.h-stoque{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.h-stoque .container-prod{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10pt;
+    margin: -2pt 5pt 5pt 5pt;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 92%;
+    cursor: pointer;
+}
+
+.h-stoque h3{
+    font-size: 18pt;
+    font-family: 'Frutiger Bold';
+    hyphens: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.h-stoque p{
+    font-size: 18pt;
+    color: black;
+    text-align: left;
+}
+.h-stoque img{
+    height:55%;
+}
+
+
+.options{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12pt;
+    width: 100%;
+}
+.favorite{
+    float: right;
+    text-align: right;
+}
+.avl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.options li{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+#compra{
+    background-color: rgb(16,18,64);
+    color: white;
+    border-radius: 30pt;
+}
+#compra a{
+    color: white;
+}
+#compra i{
+    margin: 1pt;
+}
+
+.options li i{
+    float: right;
+    align-items: center;
+}
+.more2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.checked{
+    color: rgb(242, 200, 50);
+}
+.more2 p{
+    font-size: 15pt;
+    font-family: 'Frutiger Bold';
+    text-align: center;
+    color: black;
+}
+.more2 a{
+    color: rgb(0, 0, 0);
+}
+.more2 i{
+    padding: 5pt;
+}
+.view-mob{
+    display: none;
+}
+
+@media(max-width:800px){
+    .view-mob{
+        display: block;
+    }
+    .no-mob{
+        display: none !important;
+    }
+    #sc-products{
+        grid-template-columns: auto auto;
+        padding: 6em 2em;
+    }
+    .h-stoque{
+        grid-template-columns: auto auto;
+        margin: 0 1em;
+    }
+    .h-stoque h3{
+        font-size: 16pt;
+    }
+    .h-stoque img{
+        width: 100%;
+        height: 50%;
+    }
+    .cab-prod{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 0;
+
+    }
+    .cab-prod h1{
+        font-size: 18pt;
+        padding: 1em 0 0 0;
+        margin-left: 5%;
+        margin-top: -18pt;
+        text-align: center;
+    }
+
+    .cab-prod  .dropdown-content {
+        right: 7%;
+    }
+    .categ form button{
+        width: 45%;
+    }
+    .categ iframe{
+        height: 100pt;
+    }
+    .categ form input,button{
+        font-family: 8pt;
+    }
+    #vertical-menu a{
+        display: none;
+    }
+
+}
+
+@media(max-width:720px){
+    .h-stoque{
+        grid-template-columns: auto;
+        margin: 0 1em;
+        position: relative;
+        top: 0%;
+    }
+    
+    .h-stoque li{
+        width: 90%;
+        margin: 15pt 0;
+    }
+    .h-stoque img{
+        height: 52%;
+    }
+    .filtros-loja{
+        position: relative;
+        top: 35pt;
+    }
+    .cab-prod{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 4em 10pt 0 10pt;
+
+    }
+    .cab-prod h1{
+        width: 90%;
+        position: relative;
+        left: -5%;
+    }
+    #vertical-menu a{
+        display: block;
+        background-color: rgb(16,18,64);
+        filter: brightness(180%);
+        color: white; 
+        margin-top: 45%;
+        left: -33%;
+        z-index: 20;
+    }
+}
+
+@media(max-width:600px){
+    .view-mob{
+        display: block;
+    }
+    .no-mob{
+        display: none !important;
+    }
+    #sc-products{
+        grid-template-columns: auto;
+        padding: 0 2em;
+    }
+    .filtros-loja .categ{
+        margin: 6em 1em 2em 1em;
+        width: 72%;
+    }
+    .h-stoque{
+        grid-template-columns: auto;
+        margin: 0 1em;
+    }
+    .h-stoque .container-prod{
+        margin: 2em 0;
+        height:auto;
+    }
+    .h-stoque img{
+        width: 100%;
+        height: 60%;
+    }
+    .categ{
+        display: none !important;
+    }
+    .categ form button{
+        background-color: rgb(63, 22, 91);
+        color: white;
+        font-family: 'Frutiger Bold';
+        font-size: 12pt;
+        width: 30%;
+        height: 100%;
+        border-radius: 0 10pt 10pt 0;
+        padding: 10pt;
+    }
+    
+    .cab-prod{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 4em 10pt 0 10pt;
+
+    }
+    .cab-prod h1{
+        font-size: 2em;
+        padding-right: 20pt ;
+        text-align: center;
+    }
+    .cab-prod li a, .dropbtn {
+        text-align: center;
+        font-size: 12pt;
+        padding: 0;
+        margin: 0;
+      }
+      .cab-prod i{
+        padding: 0;
+    }
+    .cab-prod  .dropdown-content {
+        right: 26%;
+    }
+    .cab-prod  .dropdown-content a {
+        text-align: center;
+      }
+    #vertical-menu a{
+        display: block;
+        background-color: rgb(16,18,64);
+        color: white;
+        filter: brightness(190%);
+        left: -165pt;
+        margin-top: 40%;
+    }
+}
+
+@media(max-width:320px){
+    .cab-prod h1{
+        position: relative;
+        left: 0%;
+    }
+}

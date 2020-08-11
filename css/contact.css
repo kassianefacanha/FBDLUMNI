@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light';
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+
+main{
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    padding: 0;
+    margin-top: 0%;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+}
+
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+main p{
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+    line-height: 150%;
+}
+main input,textarea{
+    background-color: rgba(168, 168, 168, 0.24);
+    border: none;
+    padding: 15pt;
+    margin: 10pt 0;
+    width: 100%;
+    border-radius: 15pt;
+    outline: 0;
+    color: white;
+    font-size: 15pt;
+    font-family: 'Frutiger 45 Light';
+}
+textarea{
+    resize: 0;
+}
+
+
+
+main ul{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   
+}
+main button{
+    border: none;
+    background-color: rgba(63, 22, 91, 0.568);
+    width: 25%;
+    font-size: 15pt;
+    font-family: 'Frutiger Bold';
+    padding: 10pt;
+    border-radius: 10pt;
+    margin: 15pt 0;
+    color: white;
+
+}
+.formulario{
+    padding: 4em 0 0 0;
+}
+.formulario{
+    width: 50%;
+}
+.informs{
+    padding-top: 0;
+    padding-bottom: 6em;
+}
+
+main button:hover{
+    background-color: white;
+    color: rgb(63, 22, 91);
+    font-family: 'Frutiger Bold';
+    box-shadow: 1px 1px 4px black;
+    cursor: pointer;
+}
+
+main li{
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+}
+main li h2{
+    text-align: center;
+}
+@media (max-width:800px){
+    .formulario,.informs{
+        width: 80%;
+    }
+    h2{
+        font-size: 25pt;
+    }
+}
+
+@media (max-width:600px){
+    .formulario{
+        width: 70%;
+        padding: 6em 0 0 0;
+    }
+    .formulario button{
+        width: 100%;
+    }
+    .informs{
+        width: 70%;
+    }
+}

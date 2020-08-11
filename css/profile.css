@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+.containerPerfil{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.menuVertical{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-weight: bolder;
+    line-height: 320%;
+    text-align: right;
+    padding: 4em 2em 10em 2em;
+    margin: 0;
+}
+.menuVertical a{
+    padding: 0;
+    color: white;
+}
+.dadosPerfil {
+    padding:6em;
+    margin:0;
+    width: 55em;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.dadosPerfil img{
+    width: 75%;
+    margin: 0;
+    padding: 0;
+}
+
+.dadosPerfil form{
+    margin: 0;
+    padding: 0;
+    
+}
+.dadosPerfil form input{
+    border: none;
+    border-radius: 30pt;
+    padding: 15pt;
+    width: 40%;
+    margin: 5pt;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.367);
+}
+
+.dadosPerfil form button{
+    background-color: rgb(113, 32, 115);
+    color: white;
+    border: none;
+    padding: 8pt;
+    font-size: 10pt;
+    font-weight: bolder;
+    border-radius: 5pt;
+    margin: 10pt 5pt; 
+    width: 90%;
+    outline: none;
+    cursor: pointer;
+}
+.dadosPerfil form div{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/*Cadastro de Notícias*/
+.containerNoticias{
+    width: 55em;
+    padding: 6em;
+}
+
+.cardsN{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+    padding: 0;
+}
+.cardsN li{
+    background-color: white;
+    border-radius: 6pt;
+    padding: 15pt;
+    margin: 5pt;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
+.cardsN li div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    width: 100%;
+}
+.cardsN li label{
+    margin: auto 15pt;
+}
+.cardsN li img{
+    width: 100%;
+}
+.alter{
+    background-color: rgb(113, 32, 115);
+    color: white;
+    border: none;
+    padding: 8pt;
+    font-size: 10pt;
+    font-weight: bolder;
+    border-radius: 5pt;
+    margin: 10pt 2pt; 
+    outline: none;
+    cursor: pointer;
+}
+.trash{
+    background-color: rgb(113, 32, 115); 
+    color: rgb(255, 255, 255);
+    border: none;
+    padding:8pt;
+    bottom: 15pt;
+    border-radius: 5pt;
+    font-weight: bolder;
+    outline: none;
+    cursor: pointer;
+}
+.ButtoNew{
+    background-color: whitesmoke;
+    border: none;
+    padding: 10pt;
+    font-size: 15pt;
+    outline: 0;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(167, 167, 167);
+}
+
+.ButtoNew i{
+    font-size: 25pt;
+}
+.cardsN .CardNew{
+    background-color: whitesmoke;
+   
+}
+
+.containerProdutos{
+    padding: 4em 2em;
+}
+.containerProdutos h1{
+    text-align: center;
+}
+.h-stoque{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.avl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+   
+}
+.avl p{
+    color: black;
+    font-size: 20pt;
+    margin: 0;
+    padding: 0;
+}
+.containerProdutos .cardsN li img{
+    height: 250pt;
+}
+.containerProdutos .cardsN{
+    padding: 0;
+}
+
+.dadosPerfilCadastro{
+    padding:6em;
+    margin:0;
+    width: 55em;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    text-align: center;
+}
+.dadosPerfilCadastro .miniatura {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.dadosPerfilCadastro h1{
+    font-size: 2em;
+    text-align: center;
+    margin-left: 30pt;
+}
+.dadosPerfilCadastro .miniatura img{
+    width: 300pt;
+    padding: 10pt 0 0pt 50pt;
+    margin: 10pt;
+    cursor: pointer;
+}
+
+.dadosPerfilCadastro form input{
+    border: none;
+    border-radius: 30pt;
+    font-family: 'Frutiger 45 Light'; 
+    padding: 15pt;
+    width: 100%;
+    margin: 5pt;
+    outline: 0;
+    background-color: rgb(255, 255, 255);
+}
+.dadosPerfilCadastro textarea{
+    border: none;
+    border-radius: 30pt;
+    width: 100%;
+    font-family: 'Frutiger 45 Light'; 
+    margin: 5pt;
+    resize: none;
+    padding: 15pt;
+    outline: 0;
+}
+.dadosPerfilCadastro form label{
+    margin-left: 30pt;
+}
+.dadosPerfilCadastro button{
+    background-color: rgb(113, 32, 115);
+    color: white;
+    border: none;
+    padding: 8pt;
+    font-size: 10pt;
+    font-weight: bolder;
+    border-radius: 10pt;
+    margin: 10pt 0 0 20pt;
+    width: 40%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}

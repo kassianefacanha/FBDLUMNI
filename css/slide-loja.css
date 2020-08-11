@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+
+.promo-slider #slider{
+    overflow: hidden;
+    margin: 0;
+}
+
+.promo-slider #slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+    box-shadow: 1px 1px 4px black;
+    margin: 0;
+}
+
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: 0%;
+    }
+    95%{
+        left: 0%;
+    }
+    100%{
+        left: 0%;
+    }
+
+}
+.promo-slider{
+    padding: 6em 10em 0 10em;
+    margin-bottom: -8em;
+}
+
+.etq-promo{
+    padding: 0;
+}
+
+.promo-slider .etq-promo ul{
+    display: grid;
+    grid-template-columns:  auto auto auto auto;
+    justify-content:space-around;
+    color: white;
+    margin-left: 0%;
+    padding: 0;
+}
+.promo-slider .etq-promo li{
+    margin: 20pt 5pt;
+    padding: 15pt;
+    width: 80%;
+    background-color: rgb(16,18,64);
+    box-shadow: 1px 1px 4px black;
+    cursor: pointer;
+    border-radius: 50pt;
+}
+
+.promo-slider .etq-promo li:hover{
+    background-color: white;
+    color: rgb(16,18,64);
+}
+
+
+.promo-slider .etq-promo li legend{
+    margin: 5pt 10pt;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.promo-slider .etq-promo i{
+    text-align: center;
+    margin: 0 5pt;
+    font-size: 4em;
+    float: left;
+}
+
+.open-store{
+    background-image: url("../img/wallpaper4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.open-store h1,p{
+    color: white;
+    text-align: center;
+}
+.open-store h1{
+    font-family: 'Frutiger Bold';
+    text-transform: uppercase;
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+}
+.open-store p{
+    font-family: 'Frutiger 45 Light';
+    font-size: 2em;
+    margin: 0;
+}
+.open-store div{
+    width: 100%;
+    padding: 18em 0;
+    background-color: rgba(16, 18, 64, 0.726);
+}
+
+@media(max-width:800px){
+    .promo-slider .etq-promo ul{
+        grid-template-columns:  auto auto;
+        justify-content:center;
+        align-items: center;
+        padding: 0;
+    }
+    .promo-slider .etq-promo li{
+        margin: 15pt 5pt;
+        padding: 10pt 30pt;
+        width: 70%;
+    }
+    .promo-slider{
+        padding: 4em 3em 4em 2em;
+    }
+    .open-store div{
+        padding:26em 0 30em 0;
+    }
+    #slider figure img{
+        box-shadow:none;
+    }
+    .open-store h1{
+        margin: 0 20pt;
+    }
+}
+@media(max-width:720px){
+    .promo-slider .etq-promo i{
+        font-size: 3em;
+        margin: 8pt 0;
+    }
+    .promo-slider .etq-promo {
+        width: 103%;
+        height: 60%;
+    }
+    .promo-slider .etq-promo ul{
+        position: relative;
+        left: -2%;
+    }
+}
+
+@media(max-width:600px){
+    .promo-slider .etq-promo ul{
+        grid-template-columns:  auto;
+        justify-content:center;
+        align-items: center;
+        margin-bottom: 10pt 0;
+        padding: 0;
+    }
+
+    .promo-slider .etq-promo li{
+        margin:5pt;
+        padding: 10pt 25pt;
+        width: 75%;
+    }
+    .promo-slider{
+        padding: 4em 2em 2em 2em;
+        margin-top: -10%;
+        margin-bottom: -20%;
+    }
+    .open-store h1{
+        font-size: 5em;
+        padding: 0 15pt;    
+    }
+    .open-store p{
+        font-family: 'Frutiger 45 Light';
+        font-size: 18pt;
+        padding: 0 15pt;
+    }
+    .open-store div{
+        padding:15em 0;
+    }
+}
+
+@media(max-width:320px){
+    .open-store h1{
+        font-size: 45pt;
+    }  
+}

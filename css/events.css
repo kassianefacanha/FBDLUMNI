@@ -1,0 +1,719 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+.slider-presentation{
+    padding: 0;
+    background-image: url("../img/events/slider-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.conteudo-slider{
+    padding: 12em 0;
+    background-color: rgba(63, 22, 91, 0.603);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo-slider h2{
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Frutiger Bold'; 
+    margin: 0;
+    padding: 0;
+}
+.conteudo-slider h3{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Frutiger 45 Light'; 
+    padding: 0;
+    margin: 0;
+}
+.conteudo-slider button{
+    padding: 12pt;
+    border-radius: 12pt;
+    cursor: pointer;
+    border:none;
+    color: white;
+    font-size: 15pt;
+    margin: 15pt;
+    font-family: 'Frutiger Bold'; 
+}
+.conteudo-slider p{
+    font-size: 15pt;
+    text-align: center;
+    font-family: 'Frutiger 45 Light'; 
+    color: white;
+}
+.more-b a{
+    color: white;
+}
+
+.more-b{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.more-b #ag{
+    background-color: rgb(63,22,91);
+    outline: 0;
+}
+.more-b #mi{
+    background-color: rgb(16,18,64);
+    outline: 0;
+}
+#ag a:hover{
+    color: rgb(63,22,91);
+}
+#mi a:hover{
+    color: rgb(16,18,64);
+}
+
+#ag:hover, #mi:hover{
+    background-color: white;
+}
+
+
+.filter-events{
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255) 60%,rgb(240, 240, 240));
+    padding: 4em 10em;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.filter-events ul{
+    padding: 0;
+    margin: 0;
+}
+
+.main-events{
+    padding: 0;
+    
+}
+.aside-events{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em 0 0 0;
+}
+.aside-events h2{
+    text-transform: uppercase;
+    font-family: 'Frutiger Bold';
+    text-align: center;
+    color: rgb(113,32,115);
+    font-size: 20pt;
+}
+.aside-events h4{
+    font-size: 13pt;
+    font-family: 'Frutiger Bold'; 
+}
+.aside-events form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.aside-events .apoio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aside-events .apoio img{
+    margin: 20pt 0;
+}
+.aside-events input{
+    margin: 0;
+    padding: 8pt 0;
+    border-radius: 5pt;
+    background-color: rgb(247, 247, 247);
+    outline: 0;
+    border: none;
+    border-radius: 10pt 0 0 10pt;
+    width: 180pt;
+    position: relative;
+    left: 0;
+}
+.aside-events button{
+    border: none;
+    padding: 8pt;
+    background-color: rgb(247, 247, 247);
+    border-radius: 0 10pt 10pt 0;
+    font-size: 15pt;
+    outline: 0;
+    cursor: pointer;
+}
+.aside-events button i{
+    float: right;
+}
+
+.opc-events{
+    padding: 0;
+    margin: 0;
+}
+
+.opc-events p{
+    color: black;
+    font-family: 'Frutiger Bold'; 
+    text-align: center;
+    font-size: 15pt;
+}
+.opc-events p:hover{
+    color: rgb(16,18,64);
+}
+
+ #img-event1{
+    background-image: url("../img/events/palestra1.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 280pt;
+    height: 100%;
+
+}
+#img-event2{
+    background-image: url("../img/events/palestra10.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 280pt;
+    height: 100%;
+
+}
+
+#img-event3{
+    background-image: url("../img/events/trilha1.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 280pt;
+    height: 100%;
+
+}
+
+#img-event4{
+    background-image: url("../img/events/vigilia1.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 280pt;
+    height: 100%;
+
+}
+
+.cont-event{
+    padding: 0;
+}
+
+.cont-event li{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 4em 0;
+}
+
+.info-event{
+    padding: 0 0 0 30pt;
+
+}
+.info-event button{
+    padding: 10pt;
+    border-radius: 15pt;
+    margin: 20pt 5pt 5pt 0;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.info-event i{
+    margin: 0 5pt;
+    cursor: pointer;
+}
+.info-event a{
+    margin: 10pt 0;
+}
+
+.info-event h2{
+    font-size: 2em;
+    font-family: 'Frutiger Bold'; 
+    margin: 0;
+}
+.info-event h3{
+    margin: 0;
+}
+
+.info-event p{
+    font-size: 12pt;
+    font-family: 'Frutiger 45 Light'; 
+    color: black;
+    text-align: left;
+}
+.palest {
+    display: flex;
+    align-items: center;
+}
+.palest div{
+    display: flex;
+    flex-direction: column;
+}
+.palest div p{
+    margin: 0;
+    font-family: 'Frutiger 45 Light'; 
+}
+strong{
+    font-size: 14pt;
+    font-family: 'Frutiger Bold'; 
+}
+
+.palest img{
+    border-radius: 50%;
+    width: 15%;
+    margin-right: 10pt;
+}
+
+.palest p{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: left;
+}
+
+
+.full-list-events legend{
+    background-color: rgb(16,18,64);
+    border-radius: 0 0 10pt 0;
+    box-shadow: 1px 1px 4px solid black;
+    color: white;
+    padding: 10pt;
+    text-align: center;
+    width: 25%;
+    font-family: 'Frutiger Bold';
+}
+
+.container-event{
+    padding: 0;
+}
+
+
+.container-event h1{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.calendar{
+    width: 70%;
+    height: auto;
+    background: rgb(248, 248, 248);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calendar .image{
+    background: url("../img/bg2.jpeg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 200px;
+    padding: 15pt;
+}
+.calendar .image h1,p{
+    color: white;
+    text-align: center;
+}
+.calendar .image h1{
+    font-size: 30pt;
+    margin: 0;
+    font-family: 'Frutiger Bold';
+}
+.calendar .image p{
+    font-size: 15pt;
+    margin: 5pt;
+    font-family: 'Frutiger 45 Light';
+}
+.calendar .date{
+    padding: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    box-sizing: border-box;
+    font-size: 10pt;
+    font-family: 'Frutiger 45 Light'; 
+}
+.calendar .date div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 36, 36);
+}
+
+.calendar .date div.day{
+    font-family: 'Frutiger Bold';
+    padding: 3pt;
+}
+
+.calendar .date div.day:first-child,.calendar .date div.number:nth-child(7n + 1){
+    color: red;
+    font-family: 'Frutiger Bold';
+}
+
+.calendar .date div.number{
+    padding: 3pt;
+}
+
+.calendar .date div.number.active{
+    background-color: rgb(63,22,91);
+    color: white;
+    width: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.rodape{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.social p{
+    text-align: center;
+}
+#copy{
+    text-align: center;
+}
+
+#vertical-menu a{
+    display: none;
+}
+
+@media (max-width:800px){
+    .conteudo-slider{
+        padding: 16em 0;
+    }
+    .conteudo-slider h2{
+        font-size: 4em;
+        margin: 0 10pt;
+    }
+    .conteudo-slider h3{
+        font-size: 20pt;
+    }
+    .conteudo-slider p{
+        padding: 10pt;
+    }
+    .info-event{
+        display: grid;
+        justify-content: center;
+    }
+    .info-event a {
+       font-family: 'Frutiger Bold';
+       font-size: 15pt;
+    }
+    .more-b{
+        display: flex;
+        flex-direction: row;
+        margin: 0 10pt;
+    }
+    .more-b button{
+        width: 40%;
+    }
+
+    .filter-events{
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    .cont-event li{
+        grid-template-columns:auto;
+    }
+    .aside-events .apoio{
+        display: none;
+    }
+
+    .main-events,.aside-events{
+        width: 120%;
+        position: relative;
+        left: -10%;
+    }
+        
+    #img-event1{
+        width: 100%;
+        height: 200pt;
+
+    }
+    #img-event2{
+        width: 100%;
+        height: 200pt;
+
+    }
+
+    #img-event3{
+        width: 100%;
+        height: 200pt;
+
+    }
+
+    #img-event4{
+        width: 100%;
+        height: 200pt;
+
+    }
+    .info-event{
+        padding: 0;
+        display: grid;
+        justify-content: center;
+
+    }
+    .info-event h2,h3{
+        text-align: center;
+        margin: 10pt 0;
+    }
+    .info-event p{
+        text-align: center;
+    }
+    .container-event h1{
+        text-align: center;
+    }
+    .calendar{
+        width: 80%;
+    }
+    .calendar .image{
+        width: 90%;
+    }
+    .aside-events form input{
+        width: 300pt;
+    }
+    .palest{
+        justify-content: center;
+    }
+    .palest p{
+        text-align: left;
+    }
+    .calendar .date div.day,.calendar .date div.number{
+        font-size: 12pt;
+        padding: 10pt;
+    }
+    .calendar .date div.number.active{
+        width: 50%;
+    }
+
+    .calendar .image h1{
+        font-size: 4em;
+    }
+    .opc-events{
+        display: flex;
+    }
+    .opc-events a{
+        margin: 0 15pt;
+    }
+    footer{
+        margin-top: -5pt;
+    }
+}
+
+@media (max-width:600px){
+    .conteudo-slider{
+        padding: 6em 0;
+    }
+    .conteudo-slider h2{
+        font-size: 3em;
+        margin: 2em 10pt 0 10pt;
+    }
+    .conteudo-slider h3{
+        font-size: 15pt;
+    }
+    .conteudo-slider p{
+        padding: 0 20pt;
+    }
+    .more-b{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10pt;
+    }
+    #vertical-menu a{
+        display: block;
+        left: -160pt;
+    }
+    .aside-events form input{
+        width: 200pt;
+    }
+    
+
+    .filter-events{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .cont-event li{
+        grid-template-columns:auto;
+    }
+    .aside-events .apoio{
+        display: none;
+    }
+    .opc-events a{
+        display: none;
+    }
+    .no-mob{
+        display: none;
+    }
+        
+    #img-event1{
+        width: 120%;
+        height: 200pt;
+
+    }
+    #img-event2{
+        width: 120%;
+        height: 200pt;
+
+    }
+
+    #img-event3{
+        width: 120%;
+        height: 200pt;
+
+    }
+
+    #img-event4{
+        width: 120%;
+        height: 200pt;
+
+    }
+    .info-event{
+        padding: 0;
+        display: grid;
+        justify-content: center;
+
+    }
+    .info-event h2,h3{
+        text-align: center;
+        margin: 10pt 0;
+    }
+    .info-event p{
+        text-align: left;
+    }
+    .container-event h1{
+        text-align: center;
+    }
+    .calendar{
+        width: 100%;
+    }
+    .calendar .image{
+        width: 85%;
+    }
+    .calendar .image h1{
+        font-size: 3em;
+    }
+    .calendar .date div.day,.calendar .date div.number{
+        font-size: 10pt;
+        padding: 5pt;
+    }
+    .calendar .date div.number.active{
+        width: 50%;
+    }
+    .opc-events{
+        flex-direction: column;
+    }
+    .palest{
+        justify-content: center;
+    }
+    .palest p{
+        text-align: left;
+    }
+    #img-event1{
+        width: 100%;
+        height: 200pt;
+
+    }
+    #img-event2{
+        width: 100%;
+        height: 200pt;
+
+    }
+
+    #img-event3{
+        width: 100%;
+        height: 200pt;
+
+    }
+
+    #img-event4{
+        width: 100%;
+        height: 200pt;
+
+    }
+    
+    .more-b{
+        display: grid;
+        flex-direction: column;
+        margin: 0;
+    }
+    .more-b button{
+        width: 100%;
+        margin: 10pt 0;
+    }
+    .main-events,.aside-events{
+        width: 100%;
+        position: relative;
+        left: 0%;
+    }
+}
+@media(max-width:320px){
+    .calendar{
+        width: 85%;
+    }
+    .aside-events form input{
+        width: 160pt;
+    }
+    .aside-events h2{
+        font-size: 3em;
+    }
+    .main-events h1{
+        font-size: 25pt;
+    }
+    #img-event1{
+        width: 100%;
+        height: 150pt;
+        position: relative;
+        margin: 5pt auto;
+
+    }
+    #img-event2{
+        width: 100%;
+        height: 150pt;
+        position: relative;
+        margin: 5pt auto;
+
+    }
+
+    #img-event3{
+        width: 100%;
+        height: 150pt;
+        position: relative;
+        margin: 5pt auto;
+
+    }
+    #img-event4{
+        width: 100%;
+        height: 150pt;
+        position: relative;
+        margin: 5pt auto;
+    }
+    .cont-event li{
+        position: relative;
+        margin: 5pt auto;
+        width: 85%;
+    }
+   
+}

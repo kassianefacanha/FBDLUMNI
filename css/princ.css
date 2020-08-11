@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+html{
+    font-family: "Frutiger 45 Light";
+}
+
+body{
+    background-color: rgb(54, 54, 54);
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(113, 32, 115);
+}
+
+ul li{
+    list-style: none;
+}
+
+h1,h2{
+    font-family: 'Frutiger Bold';
+}
+
+p{
+    font-family: "Frutiger 45 Light";
+    text-align: justify;
+}
+
+/*layout do nav-menu*/
+
+nav{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 0px 20px 0px;
+}
+#logo{
+    display: flex;
+    width: 10%;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    flex-wrap: wrap;
+}
+
+ul li a{
+    display: flex;
+    color: black;
+    font-family: 'Frutiger Bold';
+    margin: 10pt;
+}
+ul li a:hover{
+    color: rgb(113, 32, 115);
+}
+nav form{
+    margin: 0 10pt;
+    display: flex;
+}
+nav form input{
+    border:none;
+    background: rgb(247, 247, 247);
+    padding: 1em;
+    border-radius: 15pt 0 0 15pt;
+    justify-content: center;
+    outline: 0;
+}
+
+
+
+nav form button{
+    padding: 8pt;
+    background: rgb(247, 247, 247);
+    border: none;
+    align-items: center;
+    border-radius: 0 15pt 15pt 0;
+    margin-left: 0;
+    font-size: 20px;
+    cursor: pointer;
+    outline: 0;
+}
+nav form button i {
+    float: right;
+    margin: 0 5pt;
+    color: rgb(85, 85, 85);
+}
+nav button{
+    display: flex;
+    border: none;
+    background: none;
+    align-items: center;
+    font-size: 18pt;
+    cursor: pointer;
+    color: rgb(85, 85, 85);
+    outline: 0;
+}
+.sub-menu{
+    margin: 5pt 0;
+}
+.sub-menu:hover{
+    color: rgb(113, 32, 115);
+}
+nav button legend{
+    font-size: 9pt;
+    text-align: left;
+    margin: 0 5pt;
+}
+#user button{
+    background: rgb(134, 134, 134);
+    border-radius: 15pt;
+    padding: 2pt 10pt;
+    margin: 0 10pt;
+    color: white;
+}
+
+#user button:hover{
+    background-color: rgb(113, 32, 115);
+    color: white;
+}
+
+#user button i:hover{
+    color: white;
+}
+
+#loja sup{
+   margin:0;
+   font-family: "Frutiger 45 Light";
+   font-size: 10pt;
+   font-weight: bolder;
+   padding: 2pt 4pt;
+   position: relative;
+   left: -8pt;
+   top: 0;
+   border-radius: 50pt;
+   background-color: rgb(113, 32, 115);
+   color: white;
+   float: right;
+}
+
+label[for="hub-menu"]{
+    padding: 5px;
+    font-family: "Frutiger 45 Light";
+    font-size: 18pt;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+}
+
+
+footer{
+    display: flex;
+    background-color: white;
+    text-align: center;
+    flex-flow: column wrap;
+    padding: 2em;
+}
+footer a{
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #712073;
+}
+
+
+
+footer p{
+    color: black;
+    font-size: 12pt;
+}
+.social{
+    padding: 0;
+    margin: 0;
+}
+
+.social li{
+    display: inline-block;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    margin-top: -5pt;
+}
+
+footer .social p{
+    color: black;
+    font-size: 12pt;
+    font-family: 'Frutiger Bold';
+    text-transform: uppercase;
+    padding: 0;
+}
+
+#copy{
+    padding: 0pt 10pt;
+    margin-top: -5pt;
+}
+
+
+
+#hub-menu{
+    display: none;
+}
+
+@media (max-width:800px){
+    nav{
+        justify-content: center;
+    }
+    #logo{
+        width: 20%;
+        padding: 10pt;
+    }
+    label[for="hub-menu"]{
+        display: block;
+        margin-left: -5%;
+    }
+    .nav-link{
+        display: none;
+    }
+    nav ul{
+        position: relative;
+        left: -5%;
+    }
+    
+}
+
+@media(max-width:720px){
+    nav form input{
+        width: 8vw;
+    }
+    nav form input::-webkit-input-placeholder{
+        visibility: hidden;
+    }
+    label[for="hub-menu"]{
+        display: block;
+        margin-left: -6%;
+    }
+    nav ul{
+        position: relative;
+        left: -6%;
+    }
+
+
+@media (max-width:600px){
+    nav{
+        justify-content: center;
+        align-items: center;
+
+    }
+    #logo{
+        width: 31%;
+    }
+    label[for="hub-menu"]{
+        font-size: 18pt;
+        position: relative;
+        display: block;
+    }
+    label[for="hub-menu"]:hover{
+        color: rgb(113, 32, 115);
+        font-weight: bolder;
+    }
+    nav form{
+        margin: 0;
+    }
+    nav form input{
+        display: none;
+    }
+    nav form button{
+        background: none;
+        padding: 8pt 0;
+    }
+    nav legend{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-menu{
+        margin-top:6pt;
+        font-size: 16pt;
+    }
+    #user button{
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius:0;
+        padding: 0;
+        margin: 1pt 5pt 0 0;
+        font-size: 8pt;
+        color: rgb(85, 85, 85);
+    }
+    #user button:hover{
+        background: white;
+    }
+    #user button i:hover{
+        background: white;
+        color: rgb(113, 32, 115);
+    }
+    nav form button i{
+        margin: 2pt;
+        font-size: 16pt;
+    }
+    .secundary-menu{
+        align-items: center;
+        font-size: 16pt;
+    }
+    }
+}
+
+@media (max-width:320px){ 
+    nav ul{
+        position: relative;
+        left: -10%;
+    }
+    label[for="hub-menu"]{
+        top: 0;
+        left: -4%;
+    } 
+}

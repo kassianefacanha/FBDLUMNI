@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+
+
+#vertical-menu a {
+    position: fixed;
+    left: -200px;
+    transition: 0.3s;
+    padding: 15px 85px 15px 15px;
+    width: 100pt;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10%;
+    font-family: 'Frutiger Bold';
+    border-radius: 0 12pt 12pt 0;
+    outline: 0;
+    transition: all .4s;
+    cursor: pointer;
+  }
+  
+  
+  #welcome {
+    top: 115px;
+    background-color: rgb(113,32,115);
+    color: white;
+    filter: brightness(150%);
+  }
+
+  #welcome:hover{
+    left: 0;
+  }
+  
+  #news {
+    top: 180px;
+    background-color: rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
+    filter: brightness(150%);
+  }
+
+  #news:hover {
+    left: 0;
+  }
+
+  #products {
+    top: 270px;
+    background-color: rgb(16,18,64);
+    color: white;
+    filter: brightness(230%);
+  }
+  #products:hover {
+    left: 0;
+  }
+
+  /*Manual de Marca*/
+  #sec8 {
+    top: 0%;
+    background-color: rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
+    filter: brightness(150%);
+    font-size: 12pt;
+  }
+
+  #sec8:hover {
+    left: 0;
+  }
+
+  #sec9 {
+    top: 9%;
+    background-color: rgb(63,22,91);
+    color: rgb(255, 255, 255);
+    filter: brightness(150%);
+  }
+
+  #sec9:hover {
+    left: 0;
+  }
+
+  #sec10 {
+    top: 18%;
+    background-color: rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
+    filter: brightness(150%);
+  }
+
+  #sec10:hover {
+    left: 0;
+  }
+
+  #sec11 {
+    top: 27%;
+    background-color: rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
+    filter: brightness(150%);
+  }
+
+  #sec11:hover {
+    left: 0;
+  }
+
+  #sec12 {
+    top: 36%;
+    background-color: rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
+    filter: brightness(150%);
+  }
+
+  #sec12:hover {
+    left: 0;
+  }
+
+  #sec13 {
+    top: 45%;
+    background-color: rgb(16,18,64);
+    color: rgb(255, 255, 255);
+    filter: brightness(150%);
+  }
+
+  #sec13:hover {
+    left: 0;
+  }
+
+  #sec14 {
+    top: 52%;
+    background-color: rgb(74, 21, 75);
+    color: rgb(255, 255, 255);
+    filter: brightness(150%);
+  }
+
+  #sec14:hover {
+    left: 0;
+  }
+
+  #sec15 {
+    top: 61%;
+    background-color: rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
+    filter: brightness(150%);
+  }
+
+  #sec15:hover {
+    left: 0;
+  }
+
+  @media(max-width:800px){
+    #vertical-menu a{
+        margin-top: 45%;
+    }
+  }
+  @media(max-width:720px){
+    #vertical-menu a{
+      z-index: 20;
+  }
+  }
+
+  @media(max-width:600px){
+    #vertical-menu a{
+        margin-top:60%;
+        left: -210px;
+    }
+  }

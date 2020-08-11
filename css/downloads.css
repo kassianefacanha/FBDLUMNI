@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light';
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+body{
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    background-color: rgba(16, 18, 64, 0.712);
+    color: white;
+    padding: 6em 10em;
+}
+
+main h2,h3{
+    color: white;
+    text-align: center;
+} 
+h2{
+    font-size: 3em;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 16pt;
+    font-family: 'Frutiger Bold';
+    padding: 0;
+    margin: 0;
+}
+
+main p{
+    color: white;
+    text-align: center;
+}
+
+main ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+main li{
+    margin: 0;
+    padding: 0 5pt;
+}
+main a {
+    margin: 0;
+}
+main button{
+    margin:0;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    background-color: rgb(36, 37, 66);
+    outline: 0;
+    padding: 10pt;
+    width: 100%;
+    color: white;
+    font-family: 'Frutiger Bold';
+    border-radius: 12pt;
+    cursor: pointer;
+}
+
+main button:hover{
+    color: rgb(36, 37, 66);
+    background-color: white;
+    box-shadow: 1px 1px 4px black;
+}
+
+@media (max-width:800px){
+    main{
+        padding: 6em 3em 10em 3em;
+    }
+    main ul{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    main h2{
+        font-size: 25pt;
+    }
+    main h3{
+        font-size: 14pt;
+    }
+    main p{
+        text-align: justify;
+    }
+}
+
+@media (max-width:600px){
+    main ul{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

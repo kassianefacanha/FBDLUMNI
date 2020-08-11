@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.959);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    min-width: 250px;
+    padding: 1em;
+    border-radius: 10pt;
+    box-shadow: 0 0 0 10px white;
+    position: relative;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.modal a{
+    text-align: center;
+    color: black;
+    margin: 10pt 0;
+    float: right;
+}
+.modal h1{
+    text-align: center;
+}
+
+.modal a:hover{
+    color: black;
+}
+
+.modal a strong:hover{
+    color: rgb(113, 32, 115);
+}
+.modal-container.mostrar{
+    display: flex;
+}
+.modal #logo{
+    width: 55%;
+    margin: 15pt auto;
+}
+.modal h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Frutiger Bold';
+}
+.modal input{
+    padding: 10pt;
+    margin: 5pt 0;
+    outline: 0;
+    border-radius: 10pt;
+    border: none;
+    width: 92%;
+    font-size: 12pt;
+    background-color: rgb(247, 247, 247);
+}
+.modal .fechar{
+    border-radius: 50%;
+    background:none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    position: absolute;
+    outline: 0;
+    top: 0%;
+    right: 0%;
+    font-size: 17pt;
+    font-family: 'Frutiger Bold';
+}
+
+.modal button{
+    padding: 5pt 0;
+    margin: 0 5pt;
+    width: 100%;
+    border-radius: 10pt;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px black;
+    font-size: 13pt;
+    font-family: 'Frutiger Bold';
+}
+.menu-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13pt;
+    padding: 0;
+}
+.menu-user button{
+    border-radius: 10pt;
+    box-shadow: none;
+    font-size: 14pt;
+    outline: 0;
+}
+#bt1{
+    background-color: rgb(113, 32, 115);
+    color: rgb(255, 255, 255);
+}
+
+#bt2{
+    background-color: rgb(16,18,64);
+    color: rgb(255, 255, 255);
+}
+#cadastro{
+    padding: 10pt;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#cadastro h2{
+    font-size: 12pt;
+    text-align: center;
+}
+
+#cadastro button{
+    width: 100%;
+    margin: 10pt 0;
+    background-color: rgb(51, 51, 51);
+    padding: 10pt;
+    outline: 0;
+}
+
+#login{
+    padding: 10pt;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#login h2{
+    font-size: 12pt;
+    text-align: center;
+    padding: 0 5pt;
+}
+
+#login button{
+    width: 100%;
+    margin: 10pt 0;
+    background-color: rgb(51, 51, 51);
+    padding: 10pt;
+    outline: 0;
+}
+.escondido{
+    display: none !important;
+}
+
+#modal-post .modal::-webkit-scrollbar {
+    width: 12px;
+}
+  
+#modal-post .modal::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 20pt;
+    background: rgba(63,22,91);
+    visibility: hidden;
+}
+
+#modal-post .modal{
+    max-height: calc(75%);
+    overflow-y: scroll;
+    padding: 6em 2em 0 2em;
+    border-radius: 10pt;
+    border-bottom: 10pt solid rgb(63,22,91);
+    width: 70%;
+    box-shadow: none;
+    cursor: default;
+}
+
+#modal-post .modal .fechar{
+    border-radius: 50%;
+    background:none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    position: absolute;
+    outline: 0;
+    top: 2%;
+    right: 0%;
+    font-size: 17pt;
+    font-family: 'Frutiger Bold';
+}
+
+#modal-post .modal .post-user{
+    box-shadow: none;
+    border: none;
+    cursor: default;
+    margin-top: 35%;
+    padding-bottom: 0;
+}
+#modal-post .modal .post-user legend{
+    margin: 10pt 20pt;
+    cursor: default;
+}
+
+#modal-post .modal .conteudo-post h2{
+    text-align: left;
+    margin: 0;
+    padding: 5pt 0;
+    cursor: default;
+}
+
+#modal-post .modal .perfil-user{
+    position: relative;
+    top: -40%;
+}
+
+#modal-post .modal .comentarios{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.usuário-modal{
+    width: 10%;
+}
+.usuário-modal img{
+    width: 55%;
+    border-radius: 50%;
+}
+.comentarios p{
+    color: rgb(49, 49, 49);
+    background-color: rgb(240, 240, 240);
+    border-radius: 20pt;
+    padding: 15pt;
+    margin: 0;
+    text-align: left;
+}
+.comentarios .coment{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.comentarios .coment h4{
+    text-align: left;
+    margin: 0;
+}
+
+
+@media (max-width:800px){
+    .modal{
+        width: 40%;
+        min-width: 280px;
+    }
+    #modal-post .modal .post-user{
+        cursor: default;
+        padding-bottom: 0;
+        width: 100%;
+        grid-template-columns: auto;
+        margin-top: 135%;
+
+    }
+    #modal-post .modal .perfil-user{
+        position: relative;
+        left: 26%;
+        width: 35%;
+        top: 5%;
+
+    }
+    #modal-post .modal .conteudo-post{
+        width: 100%;
+        position: relative;
+        left: 4%;
+    }
+    #modal-post .modal .conteudo-post h2{
+        text-align: center;
+    }
+    #modal-post .modal .conteudo-post legend{
+        width: 55%;
+        margin: 10pt auto;
+    }
+    #modal-post .modal .conteudo-post label{
+        text-align: center;
+    }
+}
+@media(max-width:720px){
+    #modal-post .modal .post-user{
+        cursor: default;
+        padding-bottom: 0;
+        width: 100%;
+        grid-template-columns: auto;
+        margin-top: 215%;
+    }
+}  
+
+@media (max-width:600px){
+    #modal-post .modal .post-user{
+        box-shadow: none;
+        border: none;
+        cursor: default;
+        margin-top: 550%;
+        padding-bottom: 0;
+        width: 110%;
+        margin-left: -15%;
+    }
+    #modal-post .modal .perfil-user{
+        position: relative;
+        width: 55%;
+        margin-left: 2%;
+        top: 0%;
+    }
+    #modal-post .modal{
+        padding: 0 2em;
+        border-radius: 6pt;
+    }
+    #modal-post .modal .conteudo-post h2{
+        text-align: center;
+    }
+    #modal-post .modal .conteudo-post iframe{
+        height: 165pt;
+        border-radius: 6pt;
+    }
+    #modal-post .modal .conteudo-post legend{
+        width: 75%;
+    }
+}
+@media(max-width:320px){
+    .modal{
+        min-width: 220px;
+        margin-top: 5%;
+    }
+    #modal-post .modal .post-user{
+        width: 100%;
+        margin-top: 750%;
+        padding: 5pt;
+    }
+    #modal-post .modal .post-user h2{
+        font-size: 15pt;
+        margin: 5pt 0;
+    }
+    #modal-post .modal .post-user p{
+       padding: 0 10pt;
+    }
+    #modal-post .modal .post-user iframe{
+        width: 95%;
+        margin: 5pt auto;
+    }
+    #modal-post .modal .perfil-user{
+        position: relative;
+        top: 22%;
+    }
+}
+

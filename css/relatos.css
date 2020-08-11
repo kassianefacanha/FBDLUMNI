@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+body{
+    background-image: url("../img/bg3.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    z-index: 3;
+}
+
+main{
+    padding: 4em 10em;
+    background-color: rgba(22, 6, 22, 0.829);
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 150%;
+    color: white;
+}
+.rel {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0;
+    margin: 0;
+}
+.rel li{
+    position: relative;
+    border: 6px solid white;
+    border-radius: 10%;
+    transition: 0.5s;
+    padding: 8em 6em;
+    margin: 6%;
+    z-index: 2;
+}
+
+.rel li a {
+    position: absolute;
+    color: white;
+}
+.rel li:hover{
+    -webkit-transform: scale(1.2);
+}
+
+.fundo{
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fundo p{
+    position: relative;
+    font-family: 'Frutiger 45 Light';
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+    top: 80%;
+}
+.fundo:hover{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#rel1{
+    background: url("../img/rel/r1.jpg") no-repeat;
+    background-size: cover;
+
+}
+#rel1:hover{
+    background-position: center center;
+}
+
+#rel2{
+    background: url("../img/rel/r2.jpg") no-repeat;
+    background-size: cover;
+
+}
+#rel2:hover{
+    background-position: center center;
+}
+
+#rel3{
+    background: url("../img/rel/r3.jpg") no-repeat;
+    background-size: cover;
+
+}
+#rel3:hover{
+    background-position: center center;
+}
+
+#rel4{
+    background: url("../img/rel/r4.jpg") no-repeat;
+    background-size: cover;
+
+}
+#rel4:hover{
+    background-position: center center;
+}
+
+.rel li img{
+    border-radius: 10%;
+}
+
+main button {
+    color: white;
+    background-color: rgba(57, 21, 82, 0.712);
+    border: none;
+    padding: 12pt;
+    border-radius: 10pt;
+    font-family: 'Frutiger Bold';
+    position: relative;
+    left: 46%;
+    outline: 0;
+}
+
+
+main button a{
+    color: white;
+    font-family: 'Frutiger Bold';
+}
+
+main button a:hover{
+    list-style: none;
+    color: white;
+}
+.env-rel form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.env-rel p{
+    margin: 20pt 0;
+    text-align: center;
+    color: white;
+    font-size: 15pt;
+}
+
+.env-rel input, textarea{
+    background-color: rgba(168, 168, 168, 0.24);
+    border: none;
+    padding: 15pt;
+    margin: 10pt 0;
+    width: 95%;
+    border-radius: 15pt;
+    outline: 0;
+    color: white;
+    font-family: 'Frutiger 45 Light'; 
+}
+.rel-b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+main form button{
+    margin-right: 4em;
+}
+
+main form button:hover{
+    background-color: white;
+    color: rgba(113, 32, 115, 0.76);
+    cursor: pointer;
+}
+
+.more2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.more2 p{
+    font-size: 15pt;
+    font-family: 'Frutiger Bold';
+    text-align: center;
+}
+.more2 a{
+    color: white;
+}
+.more2 i{
+    padding: 5pt;
+}
+.rodape{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.social p{
+    text-align: center;
+}
+#copy{
+    text-align: center;
+}
+@media (max-width:800px){
+    .rel {
+        display:grid;
+        grid-template-columns: auto auto;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .rel li{
+        padding: 9em;
+        margin:15pt;
+        z-index: 0;
+    }
+    nav{
+        z-index: 1;
+    }
+    h2{
+        font-size: 25pt;
+        margin: 10pt 0;
+    }
+    main form button{
+       margin: 10pt;
+       margin-right: 6em;
+    }
+    main{
+        padding:4em;
+    }
+    .env-rel p{
+        text-align: justify;
+    }
+}
+@media (max-width:720px){
+    .rel li{
+        padding: 7em;
+        margin: 8pt;
+        z-index: 0;
+    }
+    .rel li:hover{
+        -webkit-transform: scale(1.1);
+    }
+}
+
+@media (max-width:600px){
+    .rel {
+        display:grid;
+        grid-template-columns: auto;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .rel li{
+        padding: 8em;
+        margin: 10% 0;
+        z-index: 0;
+    }
+    
+    h2{
+        font-size: 25pt;
+    }
+    nav{
+        z-index: 1;
+    }
+    .rel li{
+        z-index: 0;
+    }
+    main{
+        padding: 6em 3em;
+    }
+    .env-rel p{
+        text-align: justify;
+    }
+    main form button{
+        margin-right: 8em;
+    }
+}
+@media(max-width:320px){
+    main button{
+        width: 100%;
+        position: relative;
+        left: 20%;
+    }
+    .rel li{
+        padding: 7em;
+    }
+    .rel li:hover{
+        -webkit-transform: scale(1.2);
+    }
+}

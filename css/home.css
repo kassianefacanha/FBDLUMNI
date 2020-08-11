@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Frutiger 45 Light'; 
+    src: url("../fonts/frutiger-45-light.otf");
+}
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url("../fonts/Frutiger\ Bold.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#sc-news{
+    background-color: rgb(243, 243, 243);
+    padding: 8em 10em 4em 10em;
+    margin-top: 48%;
+    
+}
+
+
+.more{
+    cursor: pointer;
+    margin-top: 2%;
+}
+.more:hover{
+    color: rgb(63, 22, 91);
+}
+.info{
+    margin: 0;
+    padding: 0;
+}
+.info ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.info li{
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.info li:hover{
+    color: rgb(63, 22, 91);
+}
+.info i{
+    margin: 0;
+    padding: 0;
+}
+
+.more p{
+    font-size: 15pt;
+    font-family: 'Frutiger Bold';
+    text-align: center;
+}
+.more a{
+    color: black;
+}
+.more a:hover{
+    color: rgb(63, 22, 91);
+}
+.more i{
+    padding: 5pt;
+}
+
+
+
+
+.h-stoque{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.h-stoque .container-prod{
+    background-color: white;
+    color: black;
+    padding: 10pt;
+    margin: 5pt;
+    height: 92%;
+    cursor: pointer;
+}
+
+.h-stoque h3{
+    font-size: 18pt;
+    font-family: 'Frutiger Bold';
+    hyphens: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.h-stoque p{
+    font-size: 18pt;
+    text-align: left;
+}
+.h-stoque img{
+    height:55%;
+}
+
+
+.options{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12pt;
+    width: 100%;
+}
+.favorite{
+    float: right;
+    text-align: right;
+}
+.avl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.options li{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+#compra{
+    background-color: rgb(16,18,64);
+    color: white;
+    border-radius: 30pt;
+}
+#compra a{
+    color: white;
+}
+#compra i{
+    margin: 1pt;
+}
+
+.options li i{
+    float: right;
+    align-items: center;
+}
+.more2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.checked{
+    color: rgb(242, 200, 50);
+}
+.more2 p{
+    font-size: 15pt;
+    font-family: 'Frutiger Bold';
+    text-align: center;
+}
+.more2 a{
+    color: white;
+}
+.more2 i{
+    padding: 5pt;
+}
+
+
+@media(max-width:800px){
+    .h-stoque .container-prod{
+        height: 92%;
+    }
+    #sc-news{
+    padding:6em 3em 4em 3em;
+    margin-top: 120%;
+    }
+    #sc-products{
+        padding: 10em 3em 4em 3em;
+    }
+    .noticias{
+        grid-template-columns: auto auto;
+    }
+    .h-stoque{
+        grid-template-columns: auto auto;
+    }
+    .h-stoque li{
+        margin: 10pt 0;
+    }
+    .h-stoque img{
+        height: 55%;
+    }
+}
+@media(max-width:720px){
+    .h-stoque img{
+        height: 50%;
+    }
+    #sc-news{
+        margin-top: 145%;
+    }
+}
+
+@media(max-width:600px){
+    .favorite{
+        margin: -4pt 0 0 0;
+    }
+    #sc-news{
+        padding: 6em 2em 4em 2em;
+        margin-top: 170%;
+    }
+    #sc-products{
+        padding: 8em 2em 4em 2em;
+        grid-template-columns: auto;
+    }
+    .h-stoque{
+        grid-template-columns: auto;
+    }
+    .h-stoque img{
+        height: auto;
+    }
+    .noticias{
+        grid-template-columns: auto;
+    }
+    #p-desq{
+        padding: 12pt;
+    }
+    .no-mob{
+        display: none;
+    }
+    .favorite{
+        top: -6%;
+    }
+}

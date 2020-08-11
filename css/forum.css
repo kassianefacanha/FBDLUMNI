@@ -1,0 +1,455 @@
+main{
+    background-color: rgb(241, 241, 241);
+}
+.presentation-forum{
+    background-image: url('../img/bg2.jpeg');
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 14em 0;
+}
+
+.presentation-forum h2,p{
+    text-align: center;
+    color: white;
+}
+.presentation-forum h2{
+    font-size: 6em;
+    margin: 0;
+}
+.presentation-forum p{
+    font-size: 2em;
+    margin: 0;
+}
+#forum-user img{
+    width: 55%;
+    border-radius: 50%;
+}
+.ofc-forum{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    vertical-align: top;
+    align-items: center;
+    padding: 2em 10em;
+}
+.aside-forum{
+    margin-bottom: 317%;
+}
+
+.aside-forum div{
+    padding: 2em;
+    background-color: rgba(63, 22, 91, 0.904);
+    display: grid;
+    box-shadow: 1px 1px 4px black;
+    grid-template-columns: auto;
+    vertical-align: top;
+    width: 75%;
+    margin: 0 10pt 10pt 0;
+}
+.aside-forum div h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+}
+.aside-forum div a{
+    color: white;
+    font-family: 'Frutiger 45 Light';
+    margin: 5pt 0;
+}
+.aside-forum div h3{
+    margin: 5pt 0;
+}
+.main-forum{
+    margin-top: 8em;
+}
+.post-user{
+    background-color: white;
+    box-shadow: 1px 1px 4px snow;
+    border-radius: 0 20pt 0 20pt;
+    margin-bottom: 2em;
+    border-bottom: 10px solid rgb(63, 22, 91);
+    box-shadow: 1px 1px 4px rgb(170, 170, 170);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.post-user i{
+    margin: 0 3pt;
+}
+.post-user .perfil-user{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    padding: 40pt;
+}
+.post-user .perfil-user h4{
+    color: rgb(0, 0, 0);
+    font-size: 18pt;
+    margin: 2pt 0;
+    text-align: center;
+}
+.post-user .perfil-user p#on{
+    color: rgb(19, 230, 0);
+    margin: 0;
+}
+.post-user .perfil-user p#off{
+    color: rgb(209, 23, 32);
+    margin: 0;
+}
+
+.post-user .perfil-user img{
+    width: 100%;
+    border-radius: 50%;
+}
+.post-user .conteudo-post{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 560pt;
+    padding: 5pt 20pt 0 20pt;
+    margin: 0;
+    cursor: pointer;
+}
+.post-user legend{
+    background-color: rgb(63, 22, 91);
+    padding: 10pt;
+    color: white;
+    width: 22%;
+    border-radius: 20pt;
+    font-family: 'Frutiger Bold';
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20pt;
+    text-align: center;
+}
+.post-user legend i{
+    margin: 2pt;    
+    float: right;
+}
+.post-user .conteudo-post strong{
+    cursor: pointer;
+    font-family: 'Frutiger Bold';
+}
+
+.post-user .conteudo-post p{
+    color: black;
+    text-align: justify;
+}
+
+.post-user .conteudo-post label{
+    color: rgb(136, 135, 135);
+    font-size: 13pt;
+    margin: 0;
+}
+.opc-post{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    font-size: 13pt;
+}
+
+.opc-post p:hover{
+    color: rgb(63, 22, 91);
+    cursor: pointer;
+}
+
+.more2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.more2 p{
+    font-size: 15pt;
+    font-family: 'Frutiger Bold';
+    text-align: center;
+    color: rgb(63, 22, 91);
+}
+.more2 a{
+    color: rgb(63,22,91);
+}
+.more2 i{
+    padding: 5pt;
+}
+
+
+/*Menu do Usuário*/
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -50%;
+    background-color: white;
+    min-width: 120px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 10pt;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content i{
+    margin: 0 2pt;
+}
+  
+.dropdown a:hover {background-color: rgb(63, 22, 91); color: white;}
+  
+.show {display: block;}
+
+#forum-user button{
+    padding: 0;
+    margin: 0;
+    width: 55pt;
+}
+
+@media (max-width:800px){
+    .presentation-forum{
+        padding: 24em 0;
+    }
+    .presentation-forum h2{
+        padding: 0 30pt;
+    }
+    #forum-user button{
+        padding: 0;
+        position: relative;
+        margin: 6pt 40pt 6pt 10pt;
+        width: 35pt;
+        float: left;
+    }
+    #forum-user i{
+        font-size: 12pt;
+    }
+
+    .dropdown-content {
+        top: 100%;
+        right: 0%;
+      }
+      .dropdown-content a {
+        font-size: 10pt;
+    }
+    .ofc-forum{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+    }
+    .post-user{
+        position: relative;
+        left: -3%;
+    }
+    .post-user .conteudo-post{
+        position: relative;
+        left: -20%;
+        padding: 0;
+        width:110%;
+        padding: 0pt;
+    }
+    .post-user .conteudo-post h2{
+        text-align: center;
+        padding: 10pt 0 0pt 0;
+    }
+    .post-user .conteudo-post legend{
+        position: relative;
+        width: 80%;
+    }
+    .aside-forum{
+        margin-bottom: -20%;
+        padding: 0;
+    }
+    .aside-forum div{
+        padding: 2em;
+        background-color: rgb(63, 22, 91);
+        width: 85%;
+        margin: 15pt;
+    }
+    .aside-forum h2{
+        text-align: center;
+    }
+    .aside-forum a{
+        text-align: center;
+    }
+    .aside-forum h3{
+        text-align: center;
+    }
+    .more2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-left: 15%;
+    }
+}
+
+@media(max-width:720px){
+    .more2{
+        position: relative;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width:600px){
+    #forum-user button{
+        padding: 0;
+        margin: 0;
+        width: 35pt;
+    }
+    #forum-user i{
+        font-size: 12pt;
+    }
+    .presentation-forum{
+        padding: 14em 0;
+    }
+    .presentation-forum h2{
+        margin: 0;
+        font-size: 5em;
+    }
+    .presentation-forum p{
+        margin: 0 15pt;
+    }
+    .ofc-forum{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+    }
+    .main-forum{
+        position: relative;
+        right: 10%;
+        width: 100%;
+    }
+    .post-user{
+        position: relative;
+        padding: 5pt;
+    }
+    .post-user .conteudo-post{
+        left: 0%;
+    }
+    .aside-forum{
+        margin:0;
+    }
+    .aside-forum div{
+        padding: 2em;
+        background-color: rgb(63, 22, 91);
+        width: 80%;
+        margin: 10pt 0;
+    }
+    .aside-forum h2{
+        text-align: center;
+    }
+    .aside-forum a{
+        text-align: center;
+    }
+    .aside-forum h3{
+        text-align: center;
+    }
+    .post-user{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 0;
+        width: 110%;
+        right: 12%;
+    }
+    .post-user .conteudo-post{
+        width:85%;
+        padding: 20pt;
+    }
+    .main-forum{
+        margin:0;
+        padding:0;
+        width: 100%;
+    }
+    .post-user legend{
+        background-color: rgb(63, 22, 91);
+        padding: 10pt;
+        color: white;
+        width: 70%;
+        border-radius: 20pt;
+        font-family: 'Frutiger Bold';
+        position: relative;
+        margin: 15pt;
+        text-align: center;
+    }
+    .post-user .conteudo-post h2{
+        text-align: center;
+        padding: 0 15pt;
+        margin: 0;
+    }
+    .post-user .perfil-user{
+        width: 65%;
+        padding: 20pt;
+        margin: 0 10%;
+    }
+    .post-user label{
+        text-align: center;
+    }
+}
+
+@media(max-width:320px){
+    .aside-forum div{
+        width: 73%;
+        position: relative;
+        right: -3%;
+    }
+    .main-forum{
+        margin:0;
+        padding:0;
+        position: relative;
+        left: -17pt;
+        width: 93%;
+    }
+    #forum-user button{
+        padding: 0;
+        margin: 0;
+        width: 30pt;
+    }
+    nav ul {
+        margin-left: -2%;
+    }
+    #logo{
+        margin-left: 0pt;
+    }
+    .post-user .conteudo-post{
+        position: relative;
+        left: -3%;
+    }
+    .presentation-forum h2{
+        font-size: 4em;
+    }
+    .presentation-forum p{
+        font-size: 18pt;
+    }
+    label[for="hub-menu"]{
+        left: -2%;
+    } 
+    .post-user legend{
+        position: relative;
+        margin: 10pt auto;
+    }
+    .more2{
+        position: relative;
+        margin-left: 12%;
+    }
+}
