@@ -12,8 +12,8 @@
     define('ABSPATH', dirname(__FILE__) . '/');			
     /** caminho no server para o sistema **/	
     if ( !defined('BASEURL') )		
-    define('BASEURL', '/lumni/');			
+    define('BASEURL', '/fbdmateus/FBDLUMNI');			
     /** caminho do arquivo de banco de dados **/	
-    if ( !defined('DBAPI') )		
-    define('DBAPI', ABSPATH . 'inc/database.php');
+    if ( !defined('DBAPP') )		
+    define('DBAPP', ABSPATH . 'database.php');
 	

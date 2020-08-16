@@ -1,5 +1,20 @@
-<?php require_once 'conf.php'; ?>	
-<?php require_once DBAPI; ?>
+<?php	    
+require_once('functions.php');	    
+
+?>	
+<?php 
+if (!empty($_SESSION['message'])) : 
+?>		
+<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">			
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span></button>			
+<?php echo $_SESSION['message']; ?>		
+</div>		
+<?php 
+clear_messages(); 
+?>	
+<?php 
+endif; ?>	
 
 <!DOCTYPE html>
 <html>
@@ -105,23 +120,26 @@
           </ul>
           <fieldset>
           <legend>NOTÍCIAS RECENTES</legend>
+
           <ul class="noticiasRecentes">
+          <?php if ($noticias) : ?>
+	        <?php foreach ($noticias as $noticia) : ?>	
             <li>
-              <img src="img/notic01.png" alt="">
-              <h1>Antigo Clube OVNI é citado em Matéria Jornalística</h1>
+            <tr>			
+                  <td>  <img src="<?php $noticia['imagem']; ?>" alt=""></td>			
+                  <td><?php echo $noticia['titulo']; ?> </td>
+            </tr>            
             </li>
-            <li>
-              <img src="img/notic02.png" alt="">
-              <h1>Ufólogos visitam posto de gasolina com escultura de ET</h1>
-            </li>
-            <li>
-              <img src="img/notic03.png" alt="">
-              <h1>Pedra do Eurípedes: Ponto de misteriosas aparições ufológicas</h1>
-            </li>
-            <li>
-              <img src="img/notic04.png" alt="">
-              <h1>Série Ufológica do History grava Episódio em Quixadá</h1>
-            </li>
+            <?php 
+                  endforeach;
+                  ?>	
+                  <?php else : ?>		
+                  <tr>			
+                  <td colspan="6">Nenhum registro encontrado.</td>		
+                  </tr>	
+                  <?php 
+                  endif; 
+                  ?>	
           </ul>
           </fieldset>
   </section>
