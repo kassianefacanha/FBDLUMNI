@@ -1,4 +1,21 @@
-<?php 	  require_once('functions.php'); 	  add();	?>	
+<?php	    
+require_once('functions.php');	    
+index();	
+?>	
+<?php 
+if (!empty($_SESSION['message'])) : 
+?>		
+<div class="alert alert-<?php echo $_SESSION['type']; ?> alert-dismissible" role="alert">			
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span></button>			
+<?php echo $_SESSION['message']; ?>		
+</div>		
+<?php 
+clear_messages(); 
+?>	
+<?php 
+endif; ?>	
+
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +40,7 @@
     <img src="img/logo.png" id="logo" alt="">
     <ul>
         <li class="nav-link"><a href="index.html">INÍCIO</a></li>
-        <li class="nav-link"><a href="">FÓRUM</a></li>
+        <li class="nav-link"><a href="forum.html">FÓRUM</a></li>
         <li class="nav-link"><a href="loja.html">LOJA</a></li>
         <li class="nav-link"><a href="eventos.html">EVENTOS</a></li>
         <li class="nav-link"><a href="relatos.html">RELATOS</a></li>
@@ -74,7 +91,7 @@
     <ul>
       <a href="profile.html"><li>MEU PERFIL</li></a>
       <a href="profilenoticias.html"><li>HISTÓRICO DE NOTÍCIAS</li></a>
-      <a href=""><li>HISTÓRICO DE PRODUTOS</li></a>
+      <a href="profileprodutos.html"><li>HISTÓRICO DE PRODUTOS</li></a>
       <a href=""><li>PARCERIAS DE VENDA</li></a>
       <a href=""><li>GERENCIAR MODERADORES</li></a>
       <a href=""><li>AGENDA DE EVENTOS</li></a>
@@ -83,16 +100,38 @@
       <a href=""><li>LIXEIRA</li></a>
     </ul>
     </aside>
-    <section class="dadosPerfilCadastro">
-    <form action="cadastronoticia.php" method="post">
-      <h1>CADASTRO DE NOTÍCIA</h1>
-        <input type="text" placeholder="Título" name="noticia['titulo']">
-        <input type="text" placeholder="Autor" name="noticia['autor']"><br>
-        <input type="date" placeholder="Data" name="noticia['data']">
-        <input type="time" placeholder="Horário" name="noticia['horario']">
-        <textarea cols="10" rows="10" placeholder="Texto da Publicação" name="noticia['texto']"></textarea>
-        <button>SALVAR</button>
-    </form>
+    <section class="containerNoticias">
+        <ul class="cardsN">
+                      <?php if ($noticias) : ?>
+              <?php foreach ($noticias as $noticia) : ?>	
+                <li href="view.php?id=<?php echo $noticia['id']; ?>">
+                <table>
+                      <tr><td><?php echo $noticia['titulo']; ?> </td></tr> 
+              </table>
+                  <div>
+                    <label for=""><i class="fa fa-heart" aria-hidden="true"></i>0</label>
+                    <label for=""><i class="fa fa-comment" aria-hidden="true"></i>0</label>
+                    <label for=""><i class="fa fa-share" aria-hidden="true"></i>0</label>
+                </div>
+                <button class="alter"> <a href="editnoticia.php?id=<?php echo $noticia['id']; ?>">ALTERAR INFORMAÇÕES</a></button>
+                <button class="trash"> <a href="delete.php?id=<?php echo $noticia['id']; ?>">EXCLUIR NOTÍCIA</button>
+            </li>
+            <?php 
+                  endforeach;
+                  ?>	
+                  <?php else : ?>		
+                  <tr>			
+                  <td colspan="6">Nenhum registro encontrado.</td>		
+                  </tr>	
+                  <?php 
+                  endif; 
+                  ?>
+            <li class="CardNew"><a href="cadastronoticia.html">
+              <button class="ButtoNew">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+              <br>NOVA NOTÍCIA</button></a>
+          </li>
+        </ul>
     </section>
   </main>
   <footer>

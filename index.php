@@ -1,6 +1,6 @@
 <?php	    
 require_once('functions.php');	    
-
+index();	
 ?>	
 <?php 
 if (!empty($_SESSION['message'])) : 
@@ -125,10 +125,11 @@ endif; ?>
           <?php if ($noticias) : ?>
 	        <?php foreach ($noticias as $noticia) : ?>	
             <li>
-            <tr>			
-                  <td>  <img src="<?php $noticia['imagem']; ?>" alt=""></td>			
-                  <td><?php echo $noticia['titulo']; ?> </td>
-            </tr>            
+            <table>
+                  <tr><td><?php echo $noticia['titulo']; ?> </td></tr> 
+                  <tr><td><?php echo $noticia['autor']; ?> </td></tr> 
+                  <tr> <td><a href="view.php?id=<?php echo $noticia['id']; ?>"> Visualizar</a></td>				</tr> 
+            </table>          
             </li>
             <?php 
                   endforeach;

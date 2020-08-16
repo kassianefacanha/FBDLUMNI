@@ -1,4 +1,4 @@
-<?php 	  require_once('functions.php'); 	  add();	?>	
+<?php 	  require_once('functions.php'); 	 edit();		?>	
 
 <!DOCTYPE html>
 <html>
@@ -84,13 +84,13 @@
     </ul>
     </aside>
     <section class="dadosPerfilCadastro">
-    <form action="cadastronoticia.php" method="post">
-      <h1>CADASTRO DE NOTÍCIA</h1>
-        <input type="text" placeholder="Título" name="noticia['titulo']">
-        <input type="text" placeholder="Autor" name="noticia['autor']"><br>
-        <input type="date" placeholder="Data" name="noticia['data']">
-        <input type="time" placeholder="Horário" name="noticia['horario']">
-        <textarea cols="10" rows="10" placeholder="Texto da Publicação" name="noticia['texto']"></textarea>
+       <form action="editnoticia.php?id=<?php echo $noticia['id']; ?>" method="post">	  
+       <h1>ATUALIZAR DE NOTÍCIA</h1>
+        <input type="text" placeholder="Título" name="noticia['titulo']" value="<?php echo $noticia['titulo'] ?>">
+        <input type="text" placeholder="Autor" name="noticia['autor']"value="<?php echo $noticia['autor'] ?>"><br>
+        <input type="date" placeholder="Data" name="noticia['data']" value="<?php echo $noticia['data'] ?>">
+        <input type="time" placeholder="Horário" name="noticia['horario']" value="<?php echo $noticia['horario'] ?>">
+        <textarea cols="10" rows="10" placeholder="Texto da Publicação" name="noticia['texto']" value="<?php echo $noticia['texto'] ?>"></textarea>
         <button>SALVAR</button>
     </form>
     </section>
